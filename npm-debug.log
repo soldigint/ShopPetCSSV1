@@ -1,0 +1,2691 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i', 'pg@4.4.5' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/package.json
+5 verbose installManyTop reading scoped package data from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/package.json
+6 verbose installManyTop reading scoped package data from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg-pool/package.json
+7 verbose installManyTop reading scoped package data from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/postgres-pool/package.json
+8 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/package.json
+9 silly cache add args [ 'pg@4.4.5', null ]
+10 verbose cache add spec pg@4.4.5
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'pg@4.4.5',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'pg',
+11 silly cache add   rawSpec: '4.4.5',
+11 silly cache add   spec: '4.4.5',
+11 silly cache add   type: 'version' }
+12 silly addNamed pg@4.4.5
+13 verbose addNamed "4.4.5" is a plain semver version for pg
+14 silly mapToRegistry name pg
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'pg',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'pg',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/pg
+19 verbose addNameVersion registry:https://registry.npmjs.org/pg not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/pg
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 12:46:48 PM
+23 verbose request id 9ddfdf7aff25c413
+24 verbose etag W/"9782111f4ad7057694143880185e8557"
+25 verbose lastModified Thu, 20 Feb 2020 16:34:52 GMT
+26 http request GET https://registry.npmjs.org/pg
+27 http 304 https://registry.npmjs.org/pg
+28 verbose headers { date: 'Mon, 24 Feb 2020 18:46:49 GMT',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'set-cookie': [ '__cfduid=d7070be5c4a9d65c28d0c75cb0cc5ea031582570009; expires=Wed, 25-Mar-20 18:46:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+28 verbose headers   'cf-ray': '56a39abdad67d0cc-QRO',
+28 verbose headers   age: '586',
+28 verbose headers   'cache-control': 'public, max-age=300',
+28 verbose headers   etag: '"9782111f4ad7057694143880185e8557"',
+28 verbose headers   'last-modified': 'Thu, 20 Feb 2020 16:34:52 GMT',
+28 verbose headers   vary: 'Accept-Encoding',
+28 verbose headers   'cf-cache-status': 'HIT',
+28 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+28 verbose headers   server: 'cloudflare' }
+29 silly get cb [ 304,
+29 silly get   { date: 'Mon, 24 Feb 2020 18:46:49 GMT',
+29 silly get     connection: 'keep-alive',
+29 silly get     'set-cookie': [ '__cfduid=d7070be5c4a9d65c28d0c75cb0cc5ea031582570009; expires=Wed, 25-Mar-20 18:46:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+29 silly get     'cf-ray': '56a39abdad67d0cc-QRO',
+29 silly get     age: '586',
+29 silly get     'cache-control': 'public, max-age=300',
+29 silly get     etag: '"9782111f4ad7057694143880185e8557"',
+29 silly get     'last-modified': 'Thu, 20 Feb 2020 16:34:52 GMT',
+29 silly get     vary: 'Accept-Encoding',
+29 silly get     'cf-cache-status': 'HIT',
+29 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 silly get     server: 'cloudflare' } ]
+30 verbose etag https://registry.npmjs.org/pg from cache
+31 verbose get saving pg to /Users/laura/.npm/registry.npmjs.org/pg/.cache.json
+32 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+33 silly mapToRegistry name pg
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'pg',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'pg',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/pg
+38 verbose addRemoteTarball https://registry.npmjs.org/pg/-/pg-4.4.5.tgz not in flight; adding
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/pg/-/pg-4.4.5.tgz',
+39 verbose addRemoteTarball   'e5c1f21cb4d123f92d6eb680823fa41b2b0caeef' ]
+40 info retry fetch attempt 1 at 12:46:49 PM
+41 info attempt registry request try #1 at 12:46:49 PM
+42 http fetch GET https://registry.npmjs.org/pg/-/pg-4.4.5.tgz
+43 http fetch 200 https://registry.npmjs.org/pg/-/pg-4.4.5.tgz
+44 silly fetchAndShaCheck shasum e5c1f21cb4d123f92d6eb680823fa41b2b0caeef
+45 verbose addTmpTarball /var/folders/57/65jspjg57dqf0smqvcbph_3r0000gn/T/npm-941-dbb39113/registry.npmjs.org/pg/-/pg-4.4.5.tgz not in flight; adding
+46 verbose addTmpTarball already have metadata; skipping unpack for pg@4.4.5
+47 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+48 silly cache afterAdd pg@4.4.5
+49 verbose afterAdd /Users/laura/.npm/pg/4.4.5/package/package.json not in flight; writing
+50 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+51 verbose afterAdd /Users/laura/.npm/pg/4.4.5/package/package.json written
+52 silly install resolved [ { name: 'pg',
+52 silly install resolved     version: '4.4.5',
+52 silly install resolved     description: 'PostgreSQL client - pure javascript & libpq with the same API',
+52 silly install resolved     keywords: [ 'postgres', 'pg', 'libpq', 'postgre', 'database', 'rdbms' ],
+52 silly install resolved     homepage: 'http://github.com/brianc/node-postgres',
+52 silly install resolved     repository:
+52 silly install resolved      { type: 'git',
+52 silly install resolved        url: 'git://github.com/brianc/node-postgres.git' },
+52 silly install resolved     author: { name: 'Brian Carlson', email: 'brian.m.carlson@gmail.com' },
+52 silly install resolved     main: './lib',
+52 silly install resolved     dependencies:
+52 silly install resolved      { 'buffer-writer': '1.0.1',
+52 silly install resolved        'generic-pool': '2.1.1',
+52 silly install resolved        'packet-reader': '0.2.0',
+52 silly install resolved        'pg-connection-string': '0.1.3',
+52 silly install resolved        'pg-types': '1.*',
+52 silly install resolved        pgpass: '0.0.3',
+52 silly install resolved        semver: '^4.1.0' },
+52 silly install resolved     devDependencies: { async: '0.9.0', jshint: '2.5.2', 'pg-copy-streams': '0.3.0' },
+52 silly install resolved     minNativeVersion: '1.7.0',
+52 silly install resolved     scripts:
+52 silly install resolved      { changelog: 'npm i github-changes && ./node_modules/.bin/github-changes -o brianc -r node-postgres -d pulls -a -v',
+52 silly install resolved        test: 'make test-all connectionString=postgres://postgres@localhost:5432/postgres' },
+52 silly install resolved     license: 'MIT',
+52 silly install resolved     engines: { node: '>= 0.8.0' },
+52 silly install resolved     gitHead: '7d70ffb44ff929e7605de8da5f409758e49a1beb',
+52 silly install resolved     bugs: { url: 'https://github.com/brianc/node-postgres/issues' },
+52 silly install resolved     _id: 'pg@4.4.5',
+52 silly install resolved     _shasum: 'e5c1f21cb4d123f92d6eb680823fa41b2b0caeef',
+52 silly install resolved     _from: 'pg@4.4.5',
+52 silly install resolved     _npmVersion: '3.3.12',
+52 silly install resolved     _nodeVersion: '5.5.0',
+52 silly install resolved     _npmUser: { name: 'brianc', email: 'brian.m.carlson@gmail.com' },
+52 silly install resolved     maintainers: [ [Object] ],
+52 silly install resolved     dist:
+52 silly install resolved      { shasum: 'e5c1f21cb4d123f92d6eb680823fa41b2b0caeef',
+52 silly install resolved        tarball: 'https://registry.npmjs.org/pg/-/pg-4.4.5.tgz' },
+52 silly install resolved     _npmOperationalInternal:
+52 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+52 silly install resolved        tmp: 'tmp/pg-4.4.5.tgz_1455554698539_0.160408764379099' },
+52 silly install resolved     directories: {},
+52 silly install resolved     _resolved: 'https://registry.npmjs.org/pg/-/pg-4.4.5.tgz' } ]
+53 info install pg@4.4.5 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+54 info installOne pg@4.4.5
+55 verbose installOne of pg to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4 not in flight; installing
+56 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+57 verbose lock using /Users/laura/.npm/_locks/pg-2e0a1f338035cf0f.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+58 silly install write writing pg 4.4.5 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+59 verbose unbuild node_modules/pg
+60 info preuninstall pg@7.18.2
+61 info uninstall pg@7.18.2
+62 verbose unbuild rmStuff pg@7.18.2 from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules
+63 info postuninstall pg@7.18.2
+64 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+65 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+66 silly vacuum-fs purging /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+67 silly vacuum-fs quitting because other entries in /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules
+68 verbose tar unpack /Users/laura/.npm/pg/4.4.5/package.tgz
+69 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+70 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg is being purged
+71 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+72 silly gunzTarPerm modes [ '755', '644' ]
+73 silly gunzTarPerm extractEntry package.json
+74 silly gunzTarPerm extractEntry .npmignore
+75 silly gunzTarPerm extractEntry README.md
+76 silly gunzTarPerm extractEntry .travis.yml
+77 silly gunzTarPerm extractEntry Makefile
+78 silly gunzTarPerm extractEntry NEWS.md
+79 silly gunzTarPerm extractEntry lib/client.js
+80 silly gunzTarPerm extractEntry lib/connection.js
+81 silly gunzTarPerm extractEntry lib/defaults.js
+82 silly gunzTarPerm extractEntry lib/index.js
+83 silly gunzTarPerm extractEntry lib/connection-parameters.js
+84 silly gunzTarPerm extractEntry lib/pool.js
+85 silly gunzTarPerm extractEntry lib/query.js
+86 silly gunzTarPerm extractEntry lib/result.js
+87 silly gunzTarPerm extractEntry lib/type-overrides.js
+88 silly gunzTarPerm extractEntry lib/utils.js
+89 silly gunzTarPerm extractEntry lib/native/index.js
+90 silly gunzTarPerm extractEntry lib/native/query.js
+91 silly gunzTarPerm extractEntry lib/native/result.js
+92 silly gunzTarPerm extractEntry script/create-test-tables.js
+93 silly gunzTarPerm extractEntry script/dump-db-types.js
+94 silly gunzTarPerm extractEntry script/list-db-types.js
+95 silly gunzTarPerm extractEntry script/test-connection.js
+96 silly gunzTarPerm extractEntry .jshintrc
+97 silly gunzTarPerm extractEntry test/buffer-list.js
+98 silly gunzTarPerm extractEntry test/cli.js
+99 silly gunzTarPerm extractEntry test/test-buffers.js
+100 silly gunzTarPerm extractEntry test/test-helper.js
+101 silly gunzTarPerm extractEntry test/integration/domain-tests.js
+102 silly gunzTarPerm extractEntry test/integration/test-helper.js
+103 silly gunzTarPerm extractEntry test/integration/client/api-tests.js
+104 silly gunzTarPerm extractEntry test/integration/client/huge-numeric-tests.js
+105 silly gunzTarPerm extractEntry test/integration/client/json-type-parsing-tests.js
+106 silly gunzTarPerm extractEntry test/integration/client/no-data-tests.js
+107 silly gunzTarPerm extractEntry test/integration/client/type-coercion-tests.js
+108 silly gunzTarPerm extractEntry test/integration/client/appname-tests.js
+109 silly gunzTarPerm extractEntry test/integration/client/parse-int-8-tests.js
+110 silly gunzTarPerm extractEntry test/integration/client/prepared-statement-tests.js
+111 silly gunzTarPerm extractEntry test/integration/client/query-callback-error-tests.js
+112 silly gunzTarPerm extractEntry test/integration/client/query-error-handling-prepared-statement-tests.js
+113 silly gunzTarPerm extractEntry test/integration/client/heroku-ssl-tests.js
+114 silly gunzTarPerm extractEntry test/integration/client/query-error-handling-tests.js
+115 silly gunzTarPerm extractEntry test/integration/client/heroku-pgpass-tests.js
+116 silly gunzTarPerm extractEntry test/integration/client/quick-disconnect-tests.js
+117 silly gunzTarPerm extractEntry test/integration/client/force-native-with-envvar-tests.js
+118 silly gunzTarPerm extractEntry test/integration/client/result-metadata-tests.js
+119 silly gunzTarPerm extractEntry test/integration/client/error-handling-tests.js
+120 silly gunzTarPerm extractEntry test/integration/client/results-as-array-tests.js
+121 silly gunzTarPerm extractEntry test/integration/client/empty-query-tests.js
+122 silly gunzTarPerm extractEntry test/integration/client/row-description-on-results-tests.js
+123 silly gunzTarPerm extractEntry test/integration/client/custom-types-tests.js
+124 silly gunzTarPerm extractEntry test/integration/client/simple-query-tests.js
+125 silly gunzTarPerm extractEntry test/integration/client/configuration-tests.js
+126 silly gunzTarPerm extractEntry test/integration/client/ssl-tests.js
+127 silly gunzTarPerm extractEntry test/integration/client/cancel-query-tests.js
+128 silly gunzTarPerm extractEntry test/integration/client/test-helper.js
+129 silly gunzTarPerm extractEntry test/integration/client/big-simple-query-tests.js
+130 silly gunzTarPerm extractEntry test/integration/client/timezone-tests.js
+131 silly gunzTarPerm extractEntry test/integration/client/array-tests.js
+132 silly gunzTarPerm extractEntry test/integration/client/transaction-tests.js
+133 silly gunzTarPerm extractEntry test/integration/client/no-row-result-tests.js
+134 silly gunzTarPerm extractEntry test/integration/client/type-parser-override-tests.js
+135 silly gunzTarPerm extractEntry test/integration/client/notice-tests.js
+136 silly gunzTarPerm extractEntry test/integration/client/heroku.pgpass
+137 silly gunzTarPerm modified mode [ 'test/integration/client/heroku.pgpass', 384, 420 ]
+138 silly gunzTarPerm extractEntry test/integration/connection/bound-command-tests.js
+139 silly gunzTarPerm extractEntry test/integration/connection/copy-tests.js
+140 silly gunzTarPerm extractEntry test/integration/connection/notification-tests.js
+141 silly gunzTarPerm extractEntry test/integration/connection/query-tests.js
+142 silly gunzTarPerm extractEntry test/integration/connection/test-helper.js
+143 silly gunzTarPerm extractEntry test/integration/connection-pool/double-connection-tests.js
+144 silly gunzTarPerm extractEntry test/integration/connection-pool/ending-empty-pool-tests.js
+145 silly gunzTarPerm extractEntry test/integration/connection-pool/ending-pool-tests.js
+146 silly gunzTarPerm extractEntry test/integration/connection-pool/error-tests.js
+147 silly gunzTarPerm extractEntry test/integration/connection-pool/idle-timeout-tests.js
+148 silly gunzTarPerm extractEntry test/integration/connection-pool/max-connection-tests.js
+149 silly gunzTarPerm extractEntry test/integration/connection-pool/optional-config-tests.js
+150 silly gunzTarPerm extractEntry test/integration/connection-pool/single-connection-tests.js
+151 silly gunzTarPerm extractEntry test/integration/connection-pool/test-helper.js
+152 silly gunzTarPerm extractEntry test/integration/connection-pool/waiting-connection-tests.js
+153 silly gunzTarPerm extractEntry test/integration/gh-issues/130-tests.js
+154 silly gunzTarPerm extractEntry test/integration/gh-issues/131-tests.js
+155 silly gunzTarPerm extractEntry test/integration/gh-issues/199-tests.js
+156 silly gunzTarPerm extractEntry test/integration/gh-issues/507-tests.js
+157 silly gunzTarPerm extractEntry test/integration/gh-issues/600-tests.js
+158 silly gunzTarPerm extractEntry test/integration/gh-issues/675-tests.js
+159 silly gunzTarPerm extractEntry test/integration/gh-issues/699-tests.js
+160 silly gunzTarPerm extractEntry test/integration/gh-issues/787-tests.js
+161 silly gunzTarPerm extractEntry test/integration/gh-issues/882-tests.js
+162 silly gunzTarPerm extractEntry test/native/callback-api-tests.js
+163 silly gunzTarPerm extractEntry test/native/connection-tests.js
+164 silly gunzTarPerm extractEntry test/native/error-tests.js
+165 silly gunzTarPerm extractEntry test/native/evented-api-tests.js
+166 silly gunzTarPerm extractEntry test/native/missing-native.js
+167 silly gunzTarPerm extractEntry test/native/stress-tests.js
+168 silly gunzTarPerm extractEntry test/unit/test-helper.js
+169 silly gunzTarPerm extractEntry test/unit/utils-tests.js
+170 silly gunzTarPerm extractEntry test/unit/client/cleartext-password-tests.js
+171 silly gunzTarPerm extractEntry test/unit/client/early-disconnect-tests.js
+172 silly gunzTarPerm extractEntry test/unit/client/escape-tests.js
+173 silly gunzTarPerm extractEntry test/unit/client/md5-password-tests.js
+174 silly gunzTarPerm extractEntry test/unit/client/connection-string-tests.js
+175 silly gunzTarPerm extractEntry test/unit/client/prepared-statement-tests.js
+176 silly gunzTarPerm extractEntry test/unit/client/query-queue-tests.js
+177 silly gunzTarPerm extractEntry test/unit/client/result-metadata-tests.js
+178 silly gunzTarPerm extractEntry test/unit/client/simple-query-tests.js
+179 silly gunzTarPerm extractEntry test/unit/client/stream-and-query-error-interaction-tests.js
+180 silly gunzTarPerm extractEntry test/unit/client/configuration-tests.js
+181 silly gunzTarPerm extractEntry test/unit/client/test-helper.js
+182 silly gunzTarPerm extractEntry test/unit/client/notification-tests.js
+183 silly gunzTarPerm extractEntry test/unit/connection/error-tests.js
+184 silly gunzTarPerm extractEntry test/unit/connection/inbound-parser-tests.js
+185 silly gunzTarPerm extractEntry test/unit/connection/outbound-sending-tests.js
+186 silly gunzTarPerm extractEntry test/unit/connection/startup-tests.js
+187 silly gunzTarPerm extractEntry test/unit/connection/test-helper.js
+188 silly gunzTarPerm extractEntry test/unit/connection-parameters/creation-tests.js
+189 silly gunzTarPerm extractEntry test/unit/connection-parameters/environment-variable-tests.js
+190 silly gunzTarPerm extractEntry test/unit/pool/basic-tests.js
+191 silly gunzTarPerm extractEntry test/unit/pool/timeout-tests.js
+192 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/package.json
+193 info preinstall pg@4.4.5
+194 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/package.json
+195 silly prepareForInstallMany adding buffer-writer@1.0.1 from pg dependencies
+196 silly prepareForInstallMany adding generic-pool@2.1.1 from pg dependencies
+197 silly prepareForInstallMany adding packet-reader@0.2.0 from pg dependencies
+198 silly prepareForInstallMany adding pg-connection-string@0.1.3 from pg dependencies
+199 silly prepareForInstallMany adding pg-types@1.* from pg dependencies
+200 silly prepareForInstallMany adding pgpass@0.0.3 from pg dependencies
+201 silly prepareForInstallMany adding semver@^4.1.0 from pg dependencies
+202 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/package.json
+203 silly cache add args [ 'buffer-writer@1.0.1', null ]
+204 verbose cache add spec buffer-writer@1.0.1
+205 silly cache add args [ 'generic-pool@2.1.1', null ]
+206 verbose cache add spec generic-pool@2.1.1
+207 silly cache add parsed spec Result {
+207 silly cache add   raw: 'buffer-writer@1.0.1',
+207 silly cache add   scope: null,
+207 silly cache add   name: 'buffer-writer',
+207 silly cache add   rawSpec: '1.0.1',
+207 silly cache add   spec: '1.0.1',
+207 silly cache add   type: 'version' }
+208 silly addNamed buffer-writer@1.0.1
+209 verbose addNamed "1.0.1" is a plain semver version for buffer-writer
+210 silly mapToRegistry name buffer-writer
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry data Result {
+213 silly mapToRegistry   raw: 'buffer-writer',
+213 silly mapToRegistry   scope: null,
+213 silly mapToRegistry   name: 'buffer-writer',
+213 silly mapToRegistry   rawSpec: '',
+213 silly mapToRegistry   spec: 'latest',
+213 silly mapToRegistry   type: 'tag' }
+214 silly mapToRegistry uri https://registry.npmjs.org/buffer-writer
+215 verbose addNameVersion registry:https://registry.npmjs.org/buffer-writer not in flight; fetching
+216 silly cache add parsed spec Result {
+216 silly cache add   raw: 'generic-pool@2.1.1',
+216 silly cache add   scope: null,
+216 silly cache add   name: 'generic-pool',
+216 silly cache add   rawSpec: '2.1.1',
+216 silly cache add   spec: '2.1.1',
+216 silly cache add   type: 'version' }
+217 silly addNamed generic-pool@2.1.1
+218 verbose addNamed "2.1.1" is a plain semver version for generic-pool
+219 silly mapToRegistry name generic-pool
+220 silly mapToRegistry using default registry
+221 silly mapToRegistry registry https://registry.npmjs.org/
+222 silly mapToRegistry data Result {
+222 silly mapToRegistry   raw: 'generic-pool',
+222 silly mapToRegistry   scope: null,
+222 silly mapToRegistry   name: 'generic-pool',
+222 silly mapToRegistry   rawSpec: '',
+222 silly mapToRegistry   spec: 'latest',
+222 silly mapToRegistry   type: 'tag' }
+223 silly mapToRegistry uri https://registry.npmjs.org/generic-pool
+224 verbose addNameVersion registry:https://registry.npmjs.org/generic-pool not in flight; fetching
+225 silly cache add args [ 'packet-reader@0.2.0', null ]
+226 verbose cache add spec packet-reader@0.2.0
+227 silly cache add parsed spec Result {
+227 silly cache add   raw: 'packet-reader@0.2.0',
+227 silly cache add   scope: null,
+227 silly cache add   name: 'packet-reader',
+227 silly cache add   rawSpec: '0.2.0',
+227 silly cache add   spec: '0.2.0',
+227 silly cache add   type: 'version' }
+228 silly addNamed packet-reader@0.2.0
+229 verbose addNamed "0.2.0" is a plain semver version for packet-reader
+230 silly mapToRegistry name packet-reader
+231 silly mapToRegistry using default registry
+232 silly mapToRegistry registry https://registry.npmjs.org/
+233 silly mapToRegistry data Result {
+233 silly mapToRegistry   raw: 'packet-reader',
+233 silly mapToRegistry   scope: null,
+233 silly mapToRegistry   name: 'packet-reader',
+233 silly mapToRegistry   rawSpec: '',
+233 silly mapToRegistry   spec: 'latest',
+233 silly mapToRegistry   type: 'tag' }
+234 silly mapToRegistry uri https://registry.npmjs.org/packet-reader
+235 verbose addNameVersion registry:https://registry.npmjs.org/packet-reader not in flight; fetching
+236 silly cache add args [ 'pg-connection-string@0.1.3', null ]
+237 verbose cache add spec pg-connection-string@0.1.3
+238 silly cache add parsed spec Result {
+238 silly cache add   raw: 'pg-connection-string@0.1.3',
+238 silly cache add   scope: null,
+238 silly cache add   name: 'pg-connection-string',
+238 silly cache add   rawSpec: '0.1.3',
+238 silly cache add   spec: '0.1.3',
+238 silly cache add   type: 'version' }
+239 silly addNamed pg-connection-string@0.1.3
+240 verbose addNamed "0.1.3" is a plain semver version for pg-connection-string
+241 silly mapToRegistry name pg-connection-string
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://registry.npmjs.org/
+244 silly mapToRegistry data Result {
+244 silly mapToRegistry   raw: 'pg-connection-string',
+244 silly mapToRegistry   scope: null,
+244 silly mapToRegistry   name: 'pg-connection-string',
+244 silly mapToRegistry   rawSpec: '',
+244 silly mapToRegistry   spec: 'latest',
+244 silly mapToRegistry   type: 'tag' }
+245 silly mapToRegistry uri https://registry.npmjs.org/pg-connection-string
+246 verbose addNameVersion registry:https://registry.npmjs.org/pg-connection-string not in flight; fetching
+247 silly cache add args [ 'pg-types@1.*', null ]
+248 verbose cache add spec pg-types@1.*
+249 silly cache add parsed spec Result {
+249 silly cache add   raw: 'pg-types@1.*',
+249 silly cache add   scope: null,
+249 silly cache add   name: 'pg-types',
+249 silly cache add   rawSpec: '1.*',
+249 silly cache add   spec: '>=1.0.0 <2.0.0',
+249 silly cache add   type: 'range' }
+250 silly addNamed pg-types@>=1.0.0 <2.0.0
+251 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for pg-types
+252 silly addNameRange { name: 'pg-types', range: '>=1.0.0 <2.0.0', hasData: false }
+253 silly mapToRegistry name pg-types
+254 silly mapToRegistry using default registry
+255 silly mapToRegistry registry https://registry.npmjs.org/
+256 silly mapToRegistry data Result {
+256 silly mapToRegistry   raw: 'pg-types',
+256 silly mapToRegistry   scope: null,
+256 silly mapToRegistry   name: 'pg-types',
+256 silly mapToRegistry   rawSpec: '',
+256 silly mapToRegistry   spec: 'latest',
+256 silly mapToRegistry   type: 'tag' }
+257 silly mapToRegistry uri https://registry.npmjs.org/pg-types
+258 verbose addNameRange registry:https://registry.npmjs.org/pg-types not in flight; fetching
+259 silly cache add args [ 'pgpass@0.0.3', null ]
+260 verbose cache add spec pgpass@0.0.3
+261 silly cache add parsed spec Result {
+261 silly cache add   raw: 'pgpass@0.0.3',
+261 silly cache add   scope: null,
+261 silly cache add   name: 'pgpass',
+261 silly cache add   rawSpec: '0.0.3',
+261 silly cache add   spec: '0.0.3',
+261 silly cache add   type: 'version' }
+262 silly addNamed pgpass@0.0.3
+263 verbose addNamed "0.0.3" is a plain semver version for pgpass
+264 silly mapToRegistry name pgpass
+265 silly mapToRegistry using default registry
+266 silly mapToRegistry registry https://registry.npmjs.org/
+267 silly mapToRegistry data Result {
+267 silly mapToRegistry   raw: 'pgpass',
+267 silly mapToRegistry   scope: null,
+267 silly mapToRegistry   name: 'pgpass',
+267 silly mapToRegistry   rawSpec: '',
+267 silly mapToRegistry   spec: 'latest',
+267 silly mapToRegistry   type: 'tag' }
+268 silly mapToRegistry uri https://registry.npmjs.org/pgpass
+269 verbose addNameVersion registry:https://registry.npmjs.org/pgpass not in flight; fetching
+270 silly cache add args [ 'semver@^4.1.0', null ]
+271 verbose cache add spec semver@^4.1.0
+272 silly cache add parsed spec Result {
+272 silly cache add   raw: 'semver@^4.1.0',
+272 silly cache add   scope: null,
+272 silly cache add   name: 'semver',
+272 silly cache add   rawSpec: '^4.1.0',
+272 silly cache add   spec: '>=4.1.0 <5.0.0',
+272 silly cache add   type: 'range' }
+273 silly addNamed semver@>=4.1.0 <5.0.0
+274 verbose addNamed ">=4.1.0 <5.0.0" is a valid semver range for semver
+275 silly addNameRange { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: false }
+276 silly mapToRegistry name semver
+277 silly mapToRegistry using default registry
+278 silly mapToRegistry registry https://registry.npmjs.org/
+279 silly mapToRegistry data Result {
+279 silly mapToRegistry   raw: 'semver',
+279 silly mapToRegistry   scope: null,
+279 silly mapToRegistry   name: 'semver',
+279 silly mapToRegistry   rawSpec: '',
+279 silly mapToRegistry   spec: 'latest',
+279 silly mapToRegistry   type: 'tag' }
+280 silly mapToRegistry uri https://registry.npmjs.org/semver
+281 verbose addNameRange registry:https://registry.npmjs.org/semver not in flight; fetching
+282 verbose request uri https://registry.npmjs.org/buffer-writer
+283 verbose request no auth needed
+284 info attempt registry request try #1 at 12:46:50 PM
+285 verbose etag W/"100c93a37da8d9453c1488c92f7eb3d0"
+286 verbose lastModified Tue, 01 Jan 2019 11:08:19 GMT
+287 http request GET https://registry.npmjs.org/buffer-writer
+288 verbose request uri https://registry.npmjs.org/packet-reader
+289 verbose request no auth needed
+290 info attempt registry request try #1 at 12:46:50 PM
+291 verbose etag W/"c2d37a2f54a2d82c38d0dca07f1b6b59"
+292 verbose lastModified Wed, 20 Feb 2019 15:41:24 GMT
+293 http request GET https://registry.npmjs.org/packet-reader
+294 verbose request uri https://registry.npmjs.org/pg-connection-string
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 12:46:50 PM
+297 verbose etag W/"401ee7d84ea4e4498fc66aadc046583b"
+298 verbose lastModified Wed, 19 Jun 2019 03:16:08 GMT
+299 http request GET https://registry.npmjs.org/pg-connection-string
+300 verbose request uri https://registry.npmjs.org/pgpass
+301 verbose request no auth needed
+302 info attempt registry request try #1 at 12:46:50 PM
+303 verbose etag W/"66eabb430f7292894bcc58ff4755a859"
+304 verbose lastModified Sun, 27 May 2018 12:10:31 GMT
+305 http request GET https://registry.npmjs.org/pgpass
+306 verbose request uri https://registry.npmjs.org/pg-types
+307 verbose request no auth needed
+308 info attempt registry request try #1 at 12:46:50 PM
+309 verbose etag W/"e4bf9f3b34c3893e4736fa674c18d4a9"
+310 verbose lastModified Tue, 12 Nov 2019 21:38:53 GMT
+311 http request GET https://registry.npmjs.org/pg-types
+312 verbose request uri https://registry.npmjs.org/semver
+313 verbose request no auth needed
+314 info attempt registry request try #1 at 12:46:50 PM
+315 verbose etag W/"34e3f16dbd894ccf287d4b404756cbcd"
+316 verbose lastModified Tue, 11 Feb 2020 21:54:10 GMT
+317 http request GET https://registry.npmjs.org/semver
+318 verbose request uri https://registry.npmjs.org/generic-pool
+319 verbose request no auth needed
+320 info attempt registry request try #1 at 12:46:50 PM
+321 verbose etag W/"e86c1630d90d8a3d088032a9290c7579"
+322 verbose lastModified Thu, 28 Mar 2019 11:02:49 GMT
+323 http request GET https://registry.npmjs.org/generic-pool
+324 http 304 https://registry.npmjs.org/buffer-writer
+325 verbose headers { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+325 verbose headers   connection: 'keep-alive',
+325 verbose headers   'set-cookie': [ '__cfduid=dff56f2248a4a3bd01017746b22129f201582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+325 verbose headers   'cf-ray': '56a39ac6cd72d0cc-QRO',
+325 verbose headers   age: '892',
+325 verbose headers   'cache-control': 'public, max-age=300',
+325 verbose headers   etag: '"100c93a37da8d9453c1488c92f7eb3d0"',
+325 verbose headers   'last-modified': 'Tue, 01 Jan 2019 11:08:19 GMT',
+325 verbose headers   vary: 'Accept-Encoding',
+325 verbose headers   'cf-cache-status': 'HIT',
+325 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+325 verbose headers   server: 'cloudflare' }
+326 silly get cb [ 304,
+326 silly get   { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+326 silly get     connection: 'keep-alive',
+326 silly get     'set-cookie': [ '__cfduid=dff56f2248a4a3bd01017746b22129f201582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+326 silly get     'cf-ray': '56a39ac6cd72d0cc-QRO',
+326 silly get     age: '892',
+326 silly get     'cache-control': 'public, max-age=300',
+326 silly get     etag: '"100c93a37da8d9453c1488c92f7eb3d0"',
+326 silly get     'last-modified': 'Tue, 01 Jan 2019 11:08:19 GMT',
+326 silly get     vary: 'Accept-Encoding',
+326 silly get     'cf-cache-status': 'HIT',
+326 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+326 silly get     server: 'cloudflare' } ]
+327 verbose etag https://registry.npmjs.org/buffer-writer from cache
+328 verbose get saving buffer-writer to /Users/laura/.npm/registry.npmjs.org/buffer-writer/.cache.json
+329 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+330 silly cache afterAdd buffer-writer@1.0.1
+331 verbose afterAdd /Users/laura/.npm/buffer-writer/1.0.1/package/package.json not in flight; writing
+332 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+333 verbose afterAdd /Users/laura/.npm/buffer-writer/1.0.1/package/package.json written
+334 http 304 https://registry.npmjs.org/packet-reader
+335 verbose headers { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+335 verbose headers   connection: 'keep-alive',
+335 verbose headers   'set-cookie': [ '__cfduid=d1f56b2b95a2f60543bc5ac5b7ddadeca1582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+335 verbose headers   'cf-ray': '56a39ac7fe88d0ac-QRO',
+335 verbose headers   age: '892',
+335 verbose headers   'cache-control': 'public, max-age=300',
+335 verbose headers   etag: '"c2d37a2f54a2d82c38d0dca07f1b6b59"',
+335 verbose headers   'last-modified': 'Wed, 20 Feb 2019 15:41:24 GMT',
+335 verbose headers   vary: 'Accept-Encoding',
+335 verbose headers   'cf-cache-status': 'HIT',
+335 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+335 verbose headers   server: 'cloudflare' }
+336 silly get cb [ 304,
+336 silly get   { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+336 silly get     connection: 'keep-alive',
+336 silly get     'set-cookie': [ '__cfduid=d1f56b2b95a2f60543bc5ac5b7ddadeca1582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+336 silly get     'cf-ray': '56a39ac7fe88d0ac-QRO',
+336 silly get     age: '892',
+336 silly get     'cache-control': 'public, max-age=300',
+336 silly get     etag: '"c2d37a2f54a2d82c38d0dca07f1b6b59"',
+336 silly get     'last-modified': 'Wed, 20 Feb 2019 15:41:24 GMT',
+336 silly get     vary: 'Accept-Encoding',
+336 silly get     'cf-cache-status': 'HIT',
+336 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+336 silly get     server: 'cloudflare' } ]
+337 verbose etag https://registry.npmjs.org/packet-reader from cache
+338 verbose get saving packet-reader to /Users/laura/.npm/registry.npmjs.org/packet-reader/.cache.json
+339 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+340 silly cache afterAdd packet-reader@0.2.0
+341 verbose afterAdd /Users/laura/.npm/packet-reader/0.2.0/package/package.json not in flight; writing
+342 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+343 verbose afterAdd /Users/laura/.npm/packet-reader/0.2.0/package/package.json written
+344 http 304 https://registry.npmjs.org/pg-connection-string
+345 verbose headers { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+345 verbose headers   connection: 'keep-alive',
+345 verbose headers   'set-cookie': [ '__cfduid=d71f40a2d2ea2a838b210c4ad07a6339f1582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+345 verbose headers   'cf-ray': '56a39ac82dbbd0b0-QRO',
+345 verbose headers   age: '891',
+345 verbose headers   'cache-control': 'public, max-age=300',
+345 verbose headers   etag: '"401ee7d84ea4e4498fc66aadc046583b"',
+345 verbose headers   'last-modified': 'Wed, 19 Jun 2019 03:16:08 GMT',
+345 verbose headers   vary: 'Accept-Encoding',
+345 verbose headers   'cf-cache-status': 'HIT',
+345 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+345 verbose headers   server: 'cloudflare' }
+346 silly get cb [ 304,
+346 silly get   { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+346 silly get     connection: 'keep-alive',
+346 silly get     'set-cookie': [ '__cfduid=d71f40a2d2ea2a838b210c4ad07a6339f1582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+346 silly get     'cf-ray': '56a39ac82dbbd0b0-QRO',
+346 silly get     age: '891',
+346 silly get     'cache-control': 'public, max-age=300',
+346 silly get     etag: '"401ee7d84ea4e4498fc66aadc046583b"',
+346 silly get     'last-modified': 'Wed, 19 Jun 2019 03:16:08 GMT',
+346 silly get     vary: 'Accept-Encoding',
+346 silly get     'cf-cache-status': 'HIT',
+346 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+346 silly get     server: 'cloudflare' } ]
+347 verbose etag https://registry.npmjs.org/pg-connection-string from cache
+348 verbose get saving pg-connection-string to /Users/laura/.npm/registry.npmjs.org/pg-connection-string/.cache.json
+349 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+350 http 304 https://registry.npmjs.org/pgpass
+351 verbose headers { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+351 verbose headers   connection: 'keep-alive',
+351 verbose headers   'set-cookie': [ '__cfduid=db85517b6f451286d0dd5037bf4a5e8971582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+351 verbose headers   'cf-ray': '56a39ac83d6fd12e-QRO',
+351 verbose headers   age: '890',
+351 verbose headers   'cache-control': 'public, max-age=300',
+351 verbose headers   etag: '"66eabb430f7292894bcc58ff4755a859"',
+351 verbose headers   'last-modified': 'Sun, 27 May 2018 12:10:31 GMT',
+351 verbose headers   vary: 'Accept-Encoding',
+351 verbose headers   'cf-cache-status': 'HIT',
+351 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+351 verbose headers   server: 'cloudflare' }
+352 silly get cb [ 304,
+352 silly get   { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+352 silly get     connection: 'keep-alive',
+352 silly get     'set-cookie': [ '__cfduid=db85517b6f451286d0dd5037bf4a5e8971582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+352 silly get     'cf-ray': '56a39ac83d6fd12e-QRO',
+352 silly get     age: '890',
+352 silly get     'cache-control': 'public, max-age=300',
+352 silly get     etag: '"66eabb430f7292894bcc58ff4755a859"',
+352 silly get     'last-modified': 'Sun, 27 May 2018 12:10:31 GMT',
+352 silly get     vary: 'Accept-Encoding',
+352 silly get     'cf-cache-status': 'HIT',
+352 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+352 silly get     server: 'cloudflare' } ]
+353 verbose etag https://registry.npmjs.org/pgpass from cache
+354 verbose get saving pgpass to /Users/laura/.npm/registry.npmjs.org/pgpass/.cache.json
+355 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+356 silly cache afterAdd pg-connection-string@0.1.3
+357 verbose afterAdd /Users/laura/.npm/pg-connection-string/0.1.3/package/package.json not in flight; writing
+358 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+359 silly mapToRegistry name pgpass
+360 silly mapToRegistry using default registry
+361 silly mapToRegistry registry https://registry.npmjs.org/
+362 silly mapToRegistry data Result {
+362 silly mapToRegistry   raw: 'pgpass',
+362 silly mapToRegistry   scope: null,
+362 silly mapToRegistry   name: 'pgpass',
+362 silly mapToRegistry   rawSpec: '',
+362 silly mapToRegistry   spec: 'latest',
+362 silly mapToRegistry   type: 'tag' }
+363 silly mapToRegistry uri https://registry.npmjs.org/pgpass
+364 verbose addRemoteTarball https://registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz not in flight; adding
+365 verbose addRemoteTarball [ 'https://registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz',
+365 verbose addRemoteTarball   '12e67e343b3189c2f31206ebc9cc0befffcf9140' ]
+366 http 304 https://registry.npmjs.org/pg-types
+367 verbose headers { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+367 verbose headers   connection: 'keep-alive',
+367 verbose headers   'set-cookie': [ '__cfduid=dec625324c839cb018be78c29054cbf961582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+367 verbose headers   'cf-ray': '56a39ac85f8ad0a4-QRO',
+367 verbose headers   age: '892',
+367 verbose headers   'cache-control': 'public, max-age=300',
+367 verbose headers   etag: '"e4bf9f3b34c3893e4736fa674c18d4a9"',
+367 verbose headers   'last-modified': 'Tue, 12 Nov 2019 21:38:53 GMT',
+367 verbose headers   vary: 'Accept-Encoding',
+367 verbose headers   'cf-cache-status': 'HIT',
+367 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+367 verbose headers   server: 'cloudflare' }
+368 silly get cb [ 304,
+368 silly get   { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+368 silly get     connection: 'keep-alive',
+368 silly get     'set-cookie': [ '__cfduid=dec625324c839cb018be78c29054cbf961582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+368 silly get     'cf-ray': '56a39ac85f8ad0a4-QRO',
+368 silly get     age: '892',
+368 silly get     'cache-control': 'public, max-age=300',
+368 silly get     etag: '"e4bf9f3b34c3893e4736fa674c18d4a9"',
+368 silly get     'last-modified': 'Tue, 12 Nov 2019 21:38:53 GMT',
+368 silly get     vary: 'Accept-Encoding',
+368 silly get     'cf-cache-status': 'HIT',
+368 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+368 silly get     server: 'cloudflare' } ]
+369 verbose etag https://registry.npmjs.org/pg-types from cache
+370 verbose get saving pg-types to /Users/laura/.npm/registry.npmjs.org/pg-types/.cache.json
+371 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+372 info retry fetch attempt 1 at 12:46:50 PM
+373 info attempt registry request try #1 at 12:46:50 PM
+374 http fetch GET https://registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz
+375 verbose afterAdd /Users/laura/.npm/pg-connection-string/0.1.3/package/package.json written
+376 silly addNameRange number 2 { name: 'pg-types', range: '>=1.0.0 <2.0.0', hasData: true }
+377 silly addNameRange versions [ 'pg-types',
+377 silly addNameRange   [ '1.0.0',
+377 silly addNameRange     '1.1.0',
+377 silly addNameRange     '1.2.0',
+377 silly addNameRange     '1.3.0',
+377 silly addNameRange     '1.4.0',
+377 silly addNameRange     '1.5.0',
+377 silly addNameRange     '1.6.0',
+377 silly addNameRange     '1.7.0',
+377 silly addNameRange     '1.8.0',
+377 silly addNameRange     '1.9.0',
+377 silly addNameRange     '1.10.0',
+377 silly addNameRange     '1.11.0',
+377 silly addNameRange     '1.12.0',
+377 silly addNameRange     '1.12.1',
+377 silly addNameRange     '1.13.0',
+377 silly addNameRange     '2.0.0',
+377 silly addNameRange     '2.0.1',
+377 silly addNameRange     '2.1.0',
+377 silly addNameRange     '2.2.0',
+377 silly addNameRange     '3.0.0' ] ]
+378 silly addNamed pg-types@1.13.0
+379 verbose addNamed "1.13.0" is a plain semver version for pg-types
+380 silly cache afterAdd pg-types@1.13.0
+381 verbose afterAdd /Users/laura/.npm/pg-types/1.13.0/package/package.json not in flight; writing
+382 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+383 verbose afterAdd /Users/laura/.npm/pg-types/1.13.0/package/package.json written
+384 http 304 https://registry.npmjs.org/generic-pool
+385 verbose headers { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+385 verbose headers   connection: 'keep-alive',
+385 verbose headers   'set-cookie': [ '__cfduid=dd0cf2af4b64f950e512039f89f1538e71582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+385 verbose headers   'cf-ray': '56a39ac89be1d0d8-QRO',
+385 verbose headers   age: '887',
+385 verbose headers   'cache-control': 'public, max-age=300',
+385 verbose headers   etag: '"e86c1630d90d8a3d088032a9290c7579"',
+385 verbose headers   'last-modified': 'Thu, 28 Mar 2019 11:02:49 GMT',
+385 verbose headers   vary: 'Accept-Encoding',
+385 verbose headers   'cf-cache-status': 'HIT',
+385 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+385 verbose headers   server: 'cloudflare' }
+386 silly get cb [ 304,
+386 silly get   { date: 'Mon, 24 Feb 2020 18:46:50 GMT',
+386 silly get     connection: 'keep-alive',
+386 silly get     'set-cookie': [ '__cfduid=dd0cf2af4b64f950e512039f89f1538e71582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+386 silly get     'cf-ray': '56a39ac89be1d0d8-QRO',
+386 silly get     age: '887',
+386 silly get     'cache-control': 'public, max-age=300',
+386 silly get     etag: '"e86c1630d90d8a3d088032a9290c7579"',
+386 silly get     'last-modified': 'Thu, 28 Mar 2019 11:02:49 GMT',
+386 silly get     vary: 'Accept-Encoding',
+386 silly get     'cf-cache-status': 'HIT',
+386 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+386 silly get     server: 'cloudflare' } ]
+387 verbose etag https://registry.npmjs.org/generic-pool from cache
+388 verbose get saving generic-pool to /Users/laura/.npm/registry.npmjs.org/generic-pool/.cache.json
+389 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+390 silly mapToRegistry name generic-pool
+391 silly mapToRegistry using default registry
+392 silly mapToRegistry registry https://registry.npmjs.org/
+393 silly mapToRegistry data Result {
+393 silly mapToRegistry   raw: 'generic-pool',
+393 silly mapToRegistry   scope: null,
+393 silly mapToRegistry   name: 'generic-pool',
+393 silly mapToRegistry   rawSpec: '',
+393 silly mapToRegistry   spec: 'latest',
+393 silly mapToRegistry   type: 'tag' }
+394 silly mapToRegistry uri https://registry.npmjs.org/generic-pool
+395 verbose addRemoteTarball https://registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz not in flight; adding
+396 verbose addRemoteTarball [ 'https://registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz',
+396 verbose addRemoteTarball   'af04dc2c325cfcb975023fa52bfce9617a7435fd' ]
+397 info retry fetch attempt 1 at 12:46:51 PM
+398 info attempt registry request try #1 at 12:46:51 PM
+399 http fetch GET https://registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz
+400 http 304 https://registry.npmjs.org/semver
+401 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+401 verbose headers   connection: 'keep-alive',
+401 verbose headers   'set-cookie': [ '__cfduid=ddcb5a99774c890f3ebe9b93e1ec4e6441582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+401 verbose headers   'cf-ray': '56a39ac88a90d0a8-QRO',
+401 verbose headers   age: '172',
+401 verbose headers   'cache-control': 'public, max-age=300',
+401 verbose headers   etag: '"34e3f16dbd894ccf287d4b404756cbcd"',
+401 verbose headers   'last-modified': 'Tue, 11 Feb 2020 21:54:10 GMT',
+401 verbose headers   vary: 'Accept-Encoding',
+401 verbose headers   'cf-cache-status': 'HIT',
+401 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+401 verbose headers   server: 'cloudflare' }
+402 silly get cb [ 304,
+402 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+402 silly get     connection: 'keep-alive',
+402 silly get     'set-cookie': [ '__cfduid=ddcb5a99774c890f3ebe9b93e1ec4e6441582570010; expires=Wed, 25-Mar-20 18:46:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+402 silly get     'cf-ray': '56a39ac88a90d0a8-QRO',
+402 silly get     age: '172',
+402 silly get     'cache-control': 'public, max-age=300',
+402 silly get     etag: '"34e3f16dbd894ccf287d4b404756cbcd"',
+402 silly get     'last-modified': 'Tue, 11 Feb 2020 21:54:10 GMT',
+402 silly get     vary: 'Accept-Encoding',
+402 silly get     'cf-cache-status': 'HIT',
+402 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+402 silly get     server: 'cloudflare' } ]
+403 verbose etag https://registry.npmjs.org/semver from cache
+404 verbose get saving semver to /Users/laura/.npm/registry.npmjs.org/semver/.cache.json
+405 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+406 silly addNameRange number 2 { name: 'semver', range: '>=4.1.0 <5.0.0', hasData: true }
+407 silly addNameRange versions [ 'semver',
+407 silly addNameRange   [ '1.0.0',
+407 silly addNameRange     '1.0.1',
+407 silly addNameRange     '1.0.2',
+407 silly addNameRange     '1.0.3',
+407 silly addNameRange     '1.0.4',
+407 silly addNameRange     '1.0.5',
+407 silly addNameRange     '1.0.6',
+407 silly addNameRange     '1.0.7',
+407 silly addNameRange     '1.0.8',
+407 silly addNameRange     '1.0.9',
+407 silly addNameRange     '1.0.10',
+407 silly addNameRange     '1.0.11',
+407 silly addNameRange     '1.0.12',
+407 silly addNameRange     '1.0.13',
+407 silly addNameRange     '1.0.14',
+407 silly addNameRange     '1.1.0',
+407 silly addNameRange     '1.1.1',
+407 silly addNameRange     '1.1.2',
+407 silly addNameRange     '1.1.3',
+407 silly addNameRange     '1.1.4',
+407 silly addNameRange     '2.0.0-alpha',
+407 silly addNameRange     '2.0.0-beta',
+407 silly addNameRange     '2.0.1',
+407 silly addNameRange     '2.0.2',
+407 silly addNameRange     '2.0.3',
+407 silly addNameRange     '2.0.4',
+407 silly addNameRange     '2.0.5',
+407 silly addNameRange     '2.0.6',
+407 silly addNameRange     '2.0.7',
+407 silly addNameRange     '2.0.8',
+407 silly addNameRange     '2.0.9',
+407 silly addNameRange     '2.0.10',
+407 silly addNameRange     '2.0.11',
+407 silly addNameRange     '2.1.0',
+407 silly addNameRange     '2.2.0',
+407 silly addNameRange     '2.2.1',
+407 silly addNameRange     '2.3.0',
+407 silly addNameRange     '2.3.1',
+407 silly addNameRange     '2.3.2',
+407 silly addNameRange     '3.0.0',
+407 silly addNameRange     '3.0.1',
+407 silly addNameRange     '4.0.0',
+407 silly addNameRange     '4.0.2',
+407 silly addNameRange     '4.0.3',
+407 silly addNameRange     '4.1.0',
+407 silly addNameRange     '4.1.1',
+407 silly addNameRange     '4.2.0',
+407 silly addNameRange     '4.2.1',
+407 silly addNameRange     '4.2.2',
+407 silly addNameRange     '4.3.0',
+407 silly addNameRange     '4.3.1',
+407 silly addNameRange     '4.3.2',
+407 silly addNameRange     '4.3.3',
+407 silly addNameRange     '4.3.4',
+407 silly addNameRange     '4.3.5',
+407 silly addNameRange     '4.3.6',
+407 silly addNameRange     '5.0.0',
+407 silly addNameRange     '5.0.1',
+407 silly addNameRange     '5.0.2',
+407 silly addNameRange     '5.0.3',
+407 silly addNameRange     '5.1.0',
+407 silly addNameRange     '5.1.1',
+407 silly addNameRange     '5.2.0',
+407 silly addNameRange     '5.3.0',
+407 silly addNameRange     '5.4.0',
+407 silly addNameRange     '5.4.1',
+407 silly addNameRange     '5.5.0',
+407 silly addNameRange     '5.5.1',
+407 silly addNameRange     '5.6.0',
+407 silly addNameRange     '5.7.0',
+407 silly addNameRange     '6.0.0',
+407 silly addNameRange     '6.1.0',
+407 silly addNameRange     '6.1.1',
+407 silly addNameRange     '6.1.2',
+407 silly addNameRange     '6.1.3',
+407 silly addNameRange     '6.2.0',
+407 silly addNameRange     '6.3.0',
+407 silly addNameRange     '5.7.1',
+407 silly addNameRange     '7.0.0',
+407 silly addNameRange     '7.1.0',
+407 silly addNameRange     '7.1.1',
+407 silly addNameRange     '7.1.2',
+407 silly addNameRange     '7.1.3' ] ]
+408 silly addNamed semver@4.3.6
+409 verbose addNamed "4.3.6" is a plain semver version for semver
+410 silly mapToRegistry name semver
+411 silly mapToRegistry using default registry
+412 silly mapToRegistry registry https://registry.npmjs.org/
+413 silly mapToRegistry data Result {
+413 silly mapToRegistry   raw: 'semver',
+413 silly mapToRegistry   scope: null,
+413 silly mapToRegistry   name: 'semver',
+413 silly mapToRegistry   rawSpec: '',
+413 silly mapToRegistry   spec: 'latest',
+413 silly mapToRegistry   type: 'tag' }
+414 silly mapToRegistry uri https://registry.npmjs.org/semver
+415 verbose addRemoteTarball https://registry.npmjs.org/semver/-/semver-4.3.6.tgz not in flight; adding
+416 verbose addRemoteTarball [ 'https://registry.npmjs.org/semver/-/semver-4.3.6.tgz',
+416 verbose addRemoteTarball   '300bc6e0e86374f7ba61068b5b1ecd57fc6532da' ]
+417 info retry fetch attempt 1 at 12:46:51 PM
+418 info attempt registry request try #1 at 12:46:51 PM
+419 http fetch GET https://registry.npmjs.org/semver/-/semver-4.3.6.tgz
+420 http fetch 200 https://registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz
+421 silly fetchAndShaCheck shasum 12e67e343b3189c2f31206ebc9cc0befffcf9140
+422 verbose addTmpTarball /var/folders/57/65jspjg57dqf0smqvcbph_3r0000gn/T/npm-941-dbb39113/registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz not in flight; adding
+423 verbose addTmpTarball already have metadata; skipping unpack for pgpass@0.0.3
+424 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+425 silly cache afterAdd pgpass@0.0.3
+426 verbose afterAdd /Users/laura/.npm/pgpass/0.0.3/package/package.json not in flight; writing
+427 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+428 verbose afterAdd /Users/laura/.npm/pgpass/0.0.3/package/package.json written
+429 http fetch 200 https://registry.npmjs.org/semver/-/semver-4.3.6.tgz
+430 silly fetchAndShaCheck shasum 300bc6e0e86374f7ba61068b5b1ecd57fc6532da
+431 verbose addTmpTarball /var/folders/57/65jspjg57dqf0smqvcbph_3r0000gn/T/npm-941-dbb39113/registry.npmjs.org/semver/-/semver-4.3.6.tgz not in flight; adding
+432 verbose addTmpTarball already have metadata; skipping unpack for semver@4.3.6
+433 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+434 silly cache afterAdd semver@4.3.6
+435 verbose afterAdd /Users/laura/.npm/semver/4.3.6/package/package.json not in flight; writing
+436 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+437 verbose afterAdd /Users/laura/.npm/semver/4.3.6/package/package.json written
+438 http fetch 200 https://registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz
+439 silly fetchAndShaCheck shasum af04dc2c325cfcb975023fa52bfce9617a7435fd
+440 verbose addTmpTarball /var/folders/57/65jspjg57dqf0smqvcbph_3r0000gn/T/npm-941-dbb39113/registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz not in flight; adding
+441 verbose addTmpTarball already have metadata; skipping unpack for generic-pool@2.1.1
+442 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+443 silly cache afterAdd generic-pool@2.1.1
+444 verbose afterAdd /Users/laura/.npm/generic-pool/2.1.1/package/package.json not in flight; writing
+445 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+446 verbose afterAdd /Users/laura/.npm/generic-pool/2.1.1/package/package.json written
+447 silly install resolved [ { name: 'buffer-writer',
+447 silly install resolved     version: '1.0.1',
+447 silly install resolved     description: 'a fast, efficient buffer writer',
+447 silly install resolved     main: 'index.js',
+447 silly install resolved     scripts: { test: 'mocha' },
+447 silly install resolved     repository:
+447 silly install resolved      { type: 'git',
+447 silly install resolved        url: 'git://github.com/brianc/node-buffer-writer.git' },
+447 silly install resolved     keywords: [ 'buffer', 'writer', 'builder' ],
+447 silly install resolved     author: { name: 'Brian M. Carlson' },
+447 silly install resolved     license: 'MIT',
+447 silly install resolved     devDependencies:
+447 silly install resolved      { mocha: '~1.8.1',
+447 silly install resolved        benchmark: '~1.0.0',
+447 silly install resolved        microtime: '~0.3.3',
+447 silly install resolved        bench: '~0.3.5',
+447 silly install resolved        okay: '0.0.2',
+447 silly install resolved        cloned: '0.0.1',
+447 silly install resolved        rmdir: '~1.0.0',
+447 silly install resolved        async: '~0.2.6' },
+447 silly install resolved     gitHead: 'd7c48cb142d87d76662954359bf1abcd25144329',
+447 silly install resolved     bugs: { url: 'https://github.com/brianc/node-buffer-writer/issues' },
+447 silly install resolved     homepage: 'https://github.com/brianc/node-buffer-writer#readme',
+447 silly install resolved     _id: 'buffer-writer@1.0.1',
+447 silly install resolved     _shasum: '22a936901e3029afcd7547eb4487ceb697a3bf08',
+447 silly install resolved     _from: 'buffer-writer@1.0.1',
+447 silly install resolved     _npmVersion: '3.3.12',
+447 silly install resolved     _nodeVersion: '5.5.0',
+447 silly install resolved     _npmUser: { name: 'brianc', email: 'brian.m.carlson@gmail.com' },
+447 silly install resolved     maintainers: [ [Object] ],
+447 silly install resolved     dist:
+447 silly install resolved      { shasum: '22a936901e3029afcd7547eb4487ceb697a3bf08',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/buffer-writer/-/buffer-writer-1.0.1.tgz' },
+447 silly install resolved     _npmOperationalInternal:
+447 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+447 silly install resolved        tmp: 'tmp/buffer-writer-1.0.1.tgz_1455554615929_0.2564993395935744' },
+447 silly install resolved     directories: {},
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/buffer-writer/-/buffer-writer-1.0.1.tgz',
+447 silly install resolved     readme: 'ERROR: No README data found!' },
+447 silly install resolved   { name: 'packet-reader',
+447 silly install resolved     version: '0.2.0',
+447 silly install resolved     description: 'Read binary packets...',
+447 silly install resolved     main: 'index.js',
+447 silly install resolved     directories: { test: 'test' },
+447 silly install resolved     scripts: { test: 'mocha' },
+447 silly install resolved     repository:
+447 silly install resolved      { type: 'git',
+447 silly install resolved        url: 'git://github.com/brianc/node-packet-parser.git' },
+447 silly install resolved     author: { name: 'Brian M. Carlson' },
+447 silly install resolved     license: 'MIT',
+447 silly install resolved     bugs: { url: 'https://github.com/brianc/node-packet-parser/issues' },
+447 silly install resolved     homepage: 'https://github.com/brianc/node-packet-parser',
+447 silly install resolved     devDependencies: { mocha: '~1.16.2' },
+447 silly install resolved     _id: 'packet-reader@0.2.0',
+447 silly install resolved     dist:
+447 silly install resolved      { shasum: '819df4d010b82d5ea5671f8a1a3acf039bcd7700',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/packet-reader/-/packet-reader-0.2.0.tgz' },
+447 silly install resolved     _from: 'packet-reader@0.2.0',
+447 silly install resolved     _npmVersion: '1.4.3',
+447 silly install resolved     _npmUser: { name: 'brianc', email: 'brian.m.carlson@gmail.com' },
+447 silly install resolved     maintainers: [ [Object] ],
+447 silly install resolved     _shasum: '819df4d010b82d5ea5671f8a1a3acf039bcd7700',
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/packet-reader/-/packet-reader-0.2.0.tgz',
+447 silly install resolved     readme: 'ERROR: No README data found!' },
+447 silly install resolved   { name: 'pg-connection-string',
+447 silly install resolved     version: '0.1.3',
+447 silly install resolved     description: 'Functions for dealing with a PostgresSQL connection string',
+447 silly install resolved     main: 'index.js',
+447 silly install resolved     scripts: { test: 'tap ./test' },
+447 silly install resolved     repository:
+447 silly install resolved      { type: 'git',
+447 silly install resolved        url: 'git+https://github.com/iceddev/pg-connection-string.git' },
+447 silly install resolved     keywords: [ 'pg', 'connection', 'string', 'parse' ],
+447 silly install resolved     author:
+447 silly install resolved      { name: 'Blaine Bublitz',
+447 silly install resolved        email: 'blaine@iceddev.com',
+447 silly install resolved        url: 'http://iceddev.com/' },
+447 silly install resolved     license: 'MIT',
+447 silly install resolved     bugs: { url: 'https://github.com/iceddev/pg-connection-string/issues' },
+447 silly install resolved     homepage: 'https://github.com/iceddev/pg-connection-string',
+447 silly install resolved     dependencies: {},
+447 silly install resolved     devDependencies: { tap: '^0.4.11' },
+447 silly install resolved     gitHead: '4c151b9403420c1c9a9682facef1fcdbb9b79b3b',
+447 silly install resolved     _id: 'pg-connection-string@0.1.3',
+447 silly install resolved     _shasum: 'da1847b20940e42ee1492beaf65d49d91b245df7',
+447 silly install resolved     _from: 'pg-connection-string@0.1.3',
+447 silly install resolved     _npmVersion: '1.4.28',
+447 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+447 silly install resolved     maintainers: [ [Object] ],
+447 silly install resolved     dist:
+447 silly install resolved      { shasum: 'da1847b20940e42ee1492beaf65d49d91b245df7',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/pg-connection-string/-/pg-connection-string-0.1.3.tgz' },
+447 silly install resolved     directories: {},
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/pg-connection-string/-/pg-connection-string-0.1.3.tgz',
+447 silly install resolved     readme: 'ERROR: No README data found!' },
+447 silly install resolved   { name: 'pg-types',
+447 silly install resolved     version: '1.13.0',
+447 silly install resolved     description: 'Query result type converters for node-postgres',
+447 silly install resolved     main: 'index.js',
+447 silly install resolved     scripts: { test: 'tape test/*.js | tap-spec' },
+447 silly install resolved     repository:
+447 silly install resolved      { type: 'git',
+447 silly install resolved        url: 'git://github.com/brianc/node-pg-types.git' },
+447 silly install resolved     keywords: [ 'postgres', 'PostgreSQL', 'pg' ],
+447 silly install resolved     author: { name: 'Brian M. Carlson' },
+447 silly install resolved     license: 'MIT',
+447 silly install resolved     bugs: { url: 'https://github.com/brianc/node-pg-types/issues' },
+447 silly install resolved     homepage: 'https://github.com/brianc/node-pg-types',
+447 silly install resolved     devDependencies: { pff: '^1.0.0', 'tap-spec': '^4.0.0', tape: '^4.0.0' },
+447 silly install resolved     dependencies:
+447 silly install resolved      { 'pg-int8': '1.0.1',
+447 silly install resolved        'postgres-array': '~1.0.0',
+447 silly install resolved        'postgres-bytea': '~1.0.0',
+447 silly install resolved        'postgres-date': '~1.0.0',
+447 silly install resolved        'postgres-interval': '^1.1.0' },
+447 silly install resolved     gitHead: '593e56776c7e2ccbe0443a69d22aed2903a1e5dc',
+447 silly install resolved     _id: 'pg-types@1.13.0',
+447 silly install resolved     _npmVersion: '5.5.1',
+447 silly install resolved     _nodeVersion: '8.9.0',
+447 silly install resolved     _npmUser: { name: 'brianc', email: 'brian.m.carlson@gmail.com' },
+447 silly install resolved     dist:
+447 silly install resolved      { integrity: 'sha512-lfKli0Gkl/+za/+b6lzENajczwZHc7D5kiUCZfgm914jipD2kIOIvEkAhZ8GrW3/TUoP9w8FHjwpPObBye5KQQ==',
+447 silly install resolved        shasum: '75f490b8a8abf75f1386ef5ec4455ecf6b345c63',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/pg-types/-/pg-types-1.13.0.tgz' },
+447 silly install resolved     maintainers: [ [Object] ],
+447 silly install resolved     _npmOperationalInternal:
+447 silly install resolved      { host: 's3://npm-registry-packages',
+447 silly install resolved        tmp: 'tmp/pg-types-1.13.0.tgz_1510755123024_0.6702414255123585' },
+447 silly install resolved     directories: {},
+447 silly install resolved     _shasum: '75f490b8a8abf75f1386ef5ec4455ecf6b345c63',
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/pg-types/-/pg-types-1.13.0.tgz',
+447 silly install resolved     _from: 'pg-types@>=1.0.0 <2.0.0',
+447 silly install resolved     readme: 'ERROR: No README data found!' },
+447 silly install resolved   { name: 'pgpass',
+447 silly install resolved     version: '0.0.3',
+447 silly install resolved     description: 'Module for reading .pgpass',
+447 silly install resolved     main: 'lib/index',
+447 silly install resolved     scripts:
+447 silly install resolved      { pretest: 'chmod 600 ./test/_pgpass',
+447 silly install resolved        test: 'npm run hint && mocha --recursive -R list && npm run coverage',
+447 silly install resolved        coverage: 'rm -rf -- lib-cov ; jscoverage lib lib-cov && mocha --recursive -R html-cov > coverage.html',
+447 silly install resolved        hint: 'jshint --verbose lib test' },
+447 silly install resolved     author:
+447 silly install resolved      { name: 'Hannes Hörl',
+447 silly install resolved        email: 'hannes.hoerl+pgpass@snowreporter.com' },
+447 silly install resolved     license: 'BSD-2-Clause',
+447 silly install resolved     dependencies: { split: '~0.3' },
+447 silly install resolved     devDependencies:
+447 silly install resolved      { mocha: '~1.14.0',
+447 silly install resolved        resumer: '0.0.0',
+447 silly install resolved        jscoverage: '~0.3.8',
+447 silly install resolved        jshint: '~2.3.0',
+447 silly install resolved        pg: '~2.11.1',
+447 silly install resolved        'pg-escape': '0.0.2',
+447 silly install resolved        tmp: '0.0.23' },
+447 silly install resolved     keywords: [ 'postgres', 'pg', 'pgpass', 'password', 'postgresql' ],
+447 silly install resolved     bugs: { url: 'https://github.com/hoegaarden/pgpass/issues' },
+447 silly install resolved     repository: { type: 'git', url: 'https://github.com/hoegaarden/pgpass.git' },
+447 silly install resolved     homepage: 'https://github.com/hoegaarden/pgpass',
+447 silly install resolved     _id: 'pgpass@0.0.3',
+447 silly install resolved     dist:
+447 silly install resolved      { shasum: '12e67e343b3189c2f31206ebc9cc0befffcf9140',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz' },
+447 silly install resolved     _from: 'pgpass@0.0.3',
+447 silly install resolved     _npmVersion: '1.4.4',
+447 silly install resolved     _npmUser:
+447 silly install resolved      { name: 'hoegaarden',
+447 silly install resolved        email: 'hannes.hoerl+npm@snowreporter.com' },
+447 silly install resolved     maintainers: [ [Object] ],
+447 silly install resolved     directories: {},
+447 silly install resolved     _shasum: '12e67e343b3189c2f31206ebc9cc0befffcf9140',
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/pgpass/-/pgpass-0.0.3.tgz' },
+447 silly install resolved   { name: 'semver',
+447 silly install resolved     version: '4.3.6',
+447 silly install resolved     description: 'The semantic version parser used by npm.',
+447 silly install resolved     main: 'semver.js',
+447 silly install resolved     browser: 'semver.browser.js',
+447 silly install resolved     min: 'semver.min.js',
+447 silly install resolved     scripts: { test: 'tap test/*.js', prepublish: 'make' },
+447 silly install resolved     devDependencies: { tap: '^1.2.0', 'uglify-js': '~2.3.6' },
+447 silly install resolved     license: 'ISC',
+447 silly install resolved     repository: { type: 'git', url: 'git://github.com/npm/node-semver.git' },
+447 silly install resolved     bin: { semver: './bin/semver' },
+447 silly install resolved     gitHead: '63c48296ca5da3ba6a88c743bb8c92effc789811',
+447 silly install resolved     bugs: { url: 'https://github.com/npm/node-semver/issues' },
+447 silly install resolved     homepage: 'https://github.com/npm/node-semver#readme',
+447 silly install resolved     _id: 'semver@4.3.6',
+447 silly install resolved     _shasum: '300bc6e0e86374f7ba61068b5b1ecd57fc6532da',
+447 silly install resolved     _from: 'semver@>=4.1.0 <5.0.0',
+447 silly install resolved     _npmVersion: '2.10.1',
+447 silly install resolved     _nodeVersion: '2.0.1',
+447 silly install resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+447 silly install resolved     dist:
+447 silly install resolved      { shasum: '300bc6e0e86374f7ba61068b5b1ecd57fc6532da',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/semver/-/semver-4.3.6.tgz' },
+447 silly install resolved     maintainers: [ [Object], [Object] ],
+447 silly install resolved     directories: {},
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/semver/-/semver-4.3.6.tgz' },
+447 silly install resolved   { name: 'generic-pool',
+447 silly install resolved     description: 'Generic resource pooling for Node.JS',
+447 silly install resolved     version: '2.1.1',
+447 silly install resolved     author: { name: 'James Cooper', email: 'james@bitmechanic.com' },
+447 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+447 silly install resolved     keywords: [ 'pool', 'pooling', 'throttle' ],
+447 silly install resolved     main: 'lib/generic-pool.js',
+447 silly install resolved     repository:
+447 silly install resolved      { type: 'git',
+447 silly install resolved        url: 'http://github.com/coopernurse/node-pool.git' },
+447 silly install resolved     devDependencies: { expresso: '>0.0.0' },
+447 silly install resolved     engines: { node: '>= 0.2.0' },
+447 silly install resolved     scripts: { test: 'expresso -I lib test/*.js' },
+447 silly install resolved     license: 'MIT',
+447 silly install resolved     gitHead: 'f66bba2d4c56867223e2f7bae386587cfb6c0b96',
+447 silly install resolved     bugs: { url: 'https://github.com/coopernurse/node-pool/issues' },
+447 silly install resolved     homepage: 'https://github.com/coopernurse/node-pool',
+447 silly install resolved     _id: 'generic-pool@2.1.1',
+447 silly install resolved     _shasum: 'af04dc2c325cfcb975023fa52bfce9617a7435fd',
+447 silly install resolved     _from: 'generic-pool@2.1.1',
+447 silly install resolved     _npmVersion: '1.5.0-alpha-1',
+447 silly install resolved     _npmUser: { name: 'sandfox', email: 'james.butler@sandfox.co.uk' },
+447 silly install resolved     maintainers: [ [Object], [Object] ],
+447 silly install resolved     dist:
+447 silly install resolved      { shasum: 'af04dc2c325cfcb975023fa52bfce9617a7435fd',
+447 silly install resolved        tarball: 'https://registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz' },
+447 silly install resolved     directories: {},
+447 silly install resolved     _resolved: 'https://registry.npmjs.org/generic-pool/-/generic-pool-2.1.1.tgz' } ]
+448 info install buffer-writer@1.0.1 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+449 info install packet-reader@0.2.0 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+450 info install pg-connection-string@0.1.3 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+451 info install pg-types@1.13.0 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+452 info install pgpass@0.0.3 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+453 info install semver@4.3.6 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+454 info install generic-pool@2.1.1 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+455 info installOne buffer-writer@1.0.1
+456 verbose installOne of buffer-writer to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+457 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+458 info installOne packet-reader@0.2.0
+459 verbose installOne of packet-reader to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+460 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+461 info installOne pg-connection-string@0.1.3
+462 verbose installOne of pg-connection-string to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+463 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+464 info installOne pg-types@1.13.0
+465 verbose installOne of pg-types to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+466 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+467 info installOne pgpass@0.0.3
+468 verbose installOne of pgpass to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+469 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+470 info installOne semver@4.3.6
+471 verbose installOne of semver to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+472 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+473 info installOne generic-pool@2.1.1
+474 verbose installOne of generic-pool to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg not in flight; installing
+475 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+476 verbose lock using /Users/laura/.npm/_locks/buffer-writer-3427793c6ce736ce.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+477 verbose lock using /Users/laura/.npm/_locks/packet-reader-059b0be8c483941f.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+478 verbose lock using /Users/laura/.npm/_locks/pg-connection-string-1289d2f9d4a9fc9d.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+479 verbose lock using /Users/laura/.npm/_locks/pg-types-52dcb3d7658e77bd.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+480 verbose lock using /Users/laura/.npm/_locks/pgpass-eb76351ae3f88862.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+481 verbose lock using /Users/laura/.npm/_locks/semver-1068a05a768a9917.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+482 verbose lock using /Users/laura/.npm/_locks/generic-pool-35eb927da714a83a.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+483 silly install write writing buffer-writer 1.0.1 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+484 silly install write writing packet-reader 0.2.0 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+485 silly install write writing pg-connection-string 0.1.3 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+486 silly install write writing pg-types 1.13.0 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+487 silly install write writing pgpass 0.0.3 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+488 silly install write writing semver 4.3.6 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+489 silly install write writing generic-pool 2.1.1 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+490 verbose unbuild node_modules/pg/node_modules/buffer-writer
+491 verbose unbuild node_modules/pg/node_modules/packet-reader
+492 verbose unbuild node_modules/pg/node_modules/pg-types
+493 verbose unbuild node_modules/pg/node_modules/pgpass
+494 verbose unbuild node_modules/pg/node_modules/semver
+495 verbose unbuild node_modules/pg/node_modules/pg-connection-string
+496 verbose unbuild node_modules/pg/node_modules/generic-pool
+497 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+498 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+499 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+500 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+501 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+502 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+503 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+504 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+505 verbose tar unpack /Users/laura/.npm/buffer-writer/1.0.1/package.tgz
+506 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+507 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer is being purged
+508 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+509 verbose tar unpack /Users/laura/.npm/packet-reader/0.2.0/package.tgz
+510 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+511 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader is being purged
+512 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+513 verbose tar unpack /Users/laura/.npm/pg-types/1.13.0/package.tgz
+514 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+515 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types is being purged
+516 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+517 verbose tar unpack /Users/laura/.npm/pgpass/0.0.3/package.tgz
+518 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+519 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass is being purged
+520 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+521 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+522 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+523 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+524 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+525 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+526 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+527 silly gunzTarPerm modes [ '755', '644' ]
+528 silly gunzTarPerm modes [ '755', '644' ]
+529 silly gunzTarPerm modes [ '755', '644' ]
+530 silly gunzTarPerm modes [ '755', '644' ]
+531 verbose tar unpack /Users/laura/.npm/semver/4.3.6/package.tgz
+532 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+533 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver is being purged
+534 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+535 verbose tar unpack /Users/laura/.npm/pg-connection-string/0.1.3/package.tgz
+536 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+537 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string is being purged
+538 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+539 verbose tar unpack /Users/laura/.npm/generic-pool/2.1.1/package.tgz
+540 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+541 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool is being purged
+542 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+543 silly gunzTarPerm modes [ '755', '644' ]
+544 silly gunzTarPerm modes [ '755', '644' ]
+545 silly gunzTarPerm modes [ '755', '644' ]
+546 silly gunzTarPerm extractEntry package.json
+547 silly gunzTarPerm extractEntry package.json
+548 silly gunzTarPerm extractEntry package.json
+549 silly gunzTarPerm extractEntry package.json
+550 silly gunzTarPerm extractEntry .npmignore
+551 silly gunzTarPerm extractEntry README.md
+552 silly gunzTarPerm extractEntry .npmignore
+553 silly gunzTarPerm extractEntry README.md
+554 silly gunzTarPerm extractEntry .npmignore
+555 silly gunzTarPerm extractEntry README.md
+556 silly gunzTarPerm extractEntry .npmignore
+557 silly gunzTarPerm extractEntry README.md
+558 silly gunzTarPerm extractEntry .jshintrc
+559 silly gunzTarPerm extractEntry .travis.yml
+560 silly gunzTarPerm extractEntry LICENSE
+561 silly gunzTarPerm extractEntry semver.browser.js
+562 silly gunzTarPerm extractEntry semver.js
+563 silly gunzTarPerm extractEntry semver.min.js
+564 silly gunzTarPerm extractEntry foot.js.txt
+565 silly gunzTarPerm extractEntry semver.min.js.gz
+566 silly gunzTarPerm extractEntry test/amd.js
+567 silly gunzTarPerm extractEntry test/big-numbers.js
+568 silly gunzTarPerm extractEntry test/clean.js
+569 silly gunzTarPerm extractEntry test/gtr.js
+570 silly gunzTarPerm extractEntry test/index.js
+571 silly gunzTarPerm extractEntry test/ltr.js
+572 silly gunzTarPerm extractEntry test/major-minor-patch.js
+573 silly gunzTarPerm extractEntry test/no-module.js
+574 silly gunzTarPerm extractEntry Makefile
+575 silly gunzTarPerm extractEntry semver.browser.js.gz
+576 silly gunzTarPerm extractEntry .travis.yml
+577 silly gunzTarPerm extractEntry bin/semver
+578 silly gunzTarPerm extractEntry head.js.txt
+579 silly gunzTarPerm extractEntry LICENSE
+580 silly gunzTarPerm extractEntry index.js
+581 silly gunzTarPerm extractEntry .travis.yml
+582 silly gunzTarPerm extractEntry package.json
+583 silly gunzTarPerm extractEntry package.json
+584 silly gunzTarPerm extractEntry package.json
+585 silly gunzTarPerm extractEntry lib/helper.js
+586 silly gunzTarPerm extractEntry lib/index.js
+587 silly gunzTarPerm extractEntry .npmignore
+588 silly gunzTarPerm extractEntry README.md
+589 silly gunzTarPerm extractEntry .travis.yml
+590 silly gunzTarPerm extractEntry index.js
+591 silly gunzTarPerm extractEntry .npmignore
+592 silly gunzTarPerm extractEntry index.js
+593 silly gunzTarPerm extractEntry Makefile
+594 silly gunzTarPerm extractEntry fabfile.py
+595 silly gunzTarPerm extractEntry .travis.yml
+596 silly gunzTarPerm extractEntry test/parse.js
+597 silly gunzTarPerm extractEntry test/#1 de-escaping.js
+598 silly gunzTarPerm extractEntry test/#1 escaping.js
+599 silly gunzTarPerm extractEntry test/helper.js
+600 silly gunzTarPerm extractEntry test/index.js
+601 silly gunzTarPerm extractEntry test/_pgpass
+602 silly gunzTarPerm extractEntry test/integration/#1 escaping.js
+603 silly gunzTarPerm extractEntry LICENSE
+604 silly gunzTarPerm extractEntry index.js
+605 silly gunzTarPerm extractEntry Makefile
+606 silly gunzTarPerm extractEntry README.md
+607 silly gunzTarPerm extractEntry test/index.js
+608 silly gunzTarPerm extractEntry lib/generic-pool.js
+609 silly gunzTarPerm extractEntry test/generic-pool.test.js
+610 silly gunzTarPerm extractEntry .travis.yml
+611 silly gunzTarPerm extractEntry benchmark/index.js
+612 silly gunzTarPerm extractEntry lib/arrayParser.js
+613 silly gunzTarPerm extractEntry lib/binaryParsers.js
+614 silly gunzTarPerm extractEntry benchmark/int-16-benchmark.js
+615 silly gunzTarPerm extractEntry benchmark/int-32-benchmark.js
+616 silly gunzTarPerm extractEntry benchmark/join-benchmark.js
+617 silly gunzTarPerm extractEntry benchmark/resize-benchmark.js
+618 silly gunzTarPerm extractEntry benchmark/small-benchmark.js
+619 silly gunzTarPerm extractEntry test/writer-tests.js
+620 silly gunzTarPerm extractEntry test/mocha.opts
+621 silly gunzTarPerm extractEntry lib/textParsers.js
+622 silly gunzTarPerm extractEntry test/index.js
+623 silly gunzTarPerm extractEntry test/types.js
+624 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader/package.json
+625 info preinstall packet-reader@0.2.0
+626 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader/package.json
+627 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader/package.json
+628 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string/package.json
+629 silly install resolved []
+630 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+631 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+632 info preinstall pg-connection-string@0.1.3
+633 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string/package.json
+634 info linkStuff packet-reader@0.2.0
+635 silly linkStuff packet-reader@0.2.0 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+636 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool/package.json
+637 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string/package.json
+638 verbose linkBins packet-reader@0.2.0
+639 verbose linkMans packet-reader@0.2.0
+640 verbose rebuildBundles packet-reader@0.2.0
+641 info install packet-reader@0.2.0
+642 info preinstall generic-pool@2.1.1
+643 info postinstall packet-reader@0.2.0
+644 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool/package.json
+645 silly install resolved []
+646 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+647 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+648 verbose unlock done using /Users/laura/.npm/_locks/packet-reader-059b0be8c483941f.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/packet-reader
+649 info linkStuff pg-connection-string@0.1.3
+650 silly linkStuff pg-connection-string@0.1.3 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+651 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool/package.json
+652 verbose linkBins pg-connection-string@0.1.3
+653 verbose linkMans pg-connection-string@0.1.3
+654 verbose rebuildBundles pg-connection-string@0.1.3
+655 info install pg-connection-string@0.1.3
+656 info postinstall pg-connection-string@0.1.3
+657 verbose unlock done using /Users/laura/.npm/_locks/pg-connection-string-1289d2f9d4a9fc9d.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-connection-string
+658 silly install resolved []
+659 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+660 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+661 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/package.json
+662 info preinstall pg-types@1.13.0
+663 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/package.json
+664 info linkStuff generic-pool@2.1.1
+665 silly linkStuff generic-pool@2.1.1 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+666 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/package.json
+667 silly prepareForInstallMany adding pg-int8@1.0.1 from pg-types dependencies
+668 silly prepareForInstallMany adding postgres-array@~1.0.0 from pg-types dependencies
+669 silly prepareForInstallMany adding postgres-bytea@~1.0.0 from pg-types dependencies
+670 silly prepareForInstallMany adding postgres-date@~1.0.0 from pg-types dependencies
+671 silly prepareForInstallMany adding postgres-interval@^1.1.0 from pg-types dependencies
+672 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/package.json
+673 verbose linkBins generic-pool@2.1.1
+674 verbose linkMans generic-pool@2.1.1
+675 verbose rebuildBundles generic-pool@2.1.1
+676 info preinstall pgpass@0.0.3
+677 info install generic-pool@2.1.1
+678 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/package.json
+679 info postinstall generic-pool@2.1.1
+680 verbose unlock done using /Users/laura/.npm/_locks/generic-pool-35eb927da714a83a.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/generic-pool
+681 silly cache add args [ 'postgres-array@~1.0.0', null ]
+682 verbose cache add spec postgres-array@~1.0.0
+683 silly cache add parsed spec Result {
+683 silly cache add   raw: 'postgres-array@~1.0.0',
+683 silly cache add   scope: null,
+683 silly cache add   name: 'postgres-array',
+683 silly cache add   rawSpec: '~1.0.0',
+683 silly cache add   spec: '>=1.0.0 <1.1.0',
+683 silly cache add   type: 'range' }
+684 silly addNamed postgres-array@>=1.0.0 <1.1.0
+685 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for postgres-array
+686 silly addNameRange { name: 'postgres-array',
+686 silly addNameRange   range: '>=1.0.0 <1.1.0',
+686 silly addNameRange   hasData: false }
+687 silly mapToRegistry name postgres-array
+688 silly mapToRegistry using default registry
+689 silly mapToRegistry registry https://registry.npmjs.org/
+690 silly mapToRegistry data Result {
+690 silly mapToRegistry   raw: 'postgres-array',
+690 silly mapToRegistry   scope: null,
+690 silly mapToRegistry   name: 'postgres-array',
+690 silly mapToRegistry   rawSpec: '',
+690 silly mapToRegistry   spec: 'latest',
+690 silly mapToRegistry   type: 'tag' }
+691 silly mapToRegistry uri https://registry.npmjs.org/postgres-array
+692 verbose addNameRange registry:https://registry.npmjs.org/postgres-array not in flight; fetching
+693 silly cache add args [ 'postgres-bytea@~1.0.0', null ]
+694 verbose cache add spec postgres-bytea@~1.0.0
+695 silly cache add parsed spec Result {
+695 silly cache add   raw: 'postgres-bytea@~1.0.0',
+695 silly cache add   scope: null,
+695 silly cache add   name: 'postgres-bytea',
+695 silly cache add   rawSpec: '~1.0.0',
+695 silly cache add   spec: '>=1.0.0 <1.1.0',
+695 silly cache add   type: 'range' }
+696 silly addNamed postgres-bytea@>=1.0.0 <1.1.0
+697 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for postgres-bytea
+698 silly addNameRange { name: 'postgres-bytea',
+698 silly addNameRange   range: '>=1.0.0 <1.1.0',
+698 silly addNameRange   hasData: false }
+699 silly mapToRegistry name postgres-bytea
+700 silly mapToRegistry using default registry
+701 silly mapToRegistry registry https://registry.npmjs.org/
+702 silly mapToRegistry data Result {
+702 silly mapToRegistry   raw: 'postgres-bytea',
+702 silly mapToRegistry   scope: null,
+702 silly mapToRegistry   name: 'postgres-bytea',
+702 silly mapToRegistry   rawSpec: '',
+702 silly mapToRegistry   spec: 'latest',
+702 silly mapToRegistry   type: 'tag' }
+703 silly mapToRegistry uri https://registry.npmjs.org/postgres-bytea
+704 verbose addNameRange registry:https://registry.npmjs.org/postgres-bytea not in flight; fetching
+705 silly cache add args [ 'postgres-date@~1.0.0', null ]
+706 verbose cache add spec postgres-date@~1.0.0
+707 silly cache add parsed spec Result {
+707 silly cache add   raw: 'postgres-date@~1.0.0',
+707 silly cache add   scope: null,
+707 silly cache add   name: 'postgres-date',
+707 silly cache add   rawSpec: '~1.0.0',
+707 silly cache add   spec: '>=1.0.0 <1.1.0',
+707 silly cache add   type: 'range' }
+708 silly addNamed postgres-date@>=1.0.0 <1.1.0
+709 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for postgres-date
+710 silly addNameRange { name: 'postgres-date',
+710 silly addNameRange   range: '>=1.0.0 <1.1.0',
+710 silly addNameRange   hasData: false }
+711 silly mapToRegistry name postgres-date
+712 silly mapToRegistry using default registry
+713 silly mapToRegistry registry https://registry.npmjs.org/
+714 silly mapToRegistry data Result {
+714 silly mapToRegistry   raw: 'postgres-date',
+714 silly mapToRegistry   scope: null,
+714 silly mapToRegistry   name: 'postgres-date',
+714 silly mapToRegistry   rawSpec: '',
+714 silly mapToRegistry   spec: 'latest',
+714 silly mapToRegistry   type: 'tag' }
+715 silly mapToRegistry uri https://registry.npmjs.org/postgres-date
+716 verbose addNameRange registry:https://registry.npmjs.org/postgres-date not in flight; fetching
+717 silly cache add args [ 'postgres-interval@^1.1.0', null ]
+718 verbose cache add spec postgres-interval@^1.1.0
+719 silly cache add parsed spec Result {
+719 silly cache add   raw: 'postgres-interval@^1.1.0',
+719 silly cache add   scope: null,
+719 silly cache add   name: 'postgres-interval',
+719 silly cache add   rawSpec: '^1.1.0',
+719 silly cache add   spec: '>=1.1.0 <2.0.0',
+719 silly cache add   type: 'range' }
+720 silly addNamed postgres-interval@>=1.1.0 <2.0.0
+721 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for postgres-interval
+722 silly addNameRange { name: 'postgres-interval',
+722 silly addNameRange   range: '>=1.1.0 <2.0.0',
+722 silly addNameRange   hasData: false }
+723 silly mapToRegistry name postgres-interval
+724 silly mapToRegistry using default registry
+725 silly mapToRegistry registry https://registry.npmjs.org/
+726 silly mapToRegistry data Result {
+726 silly mapToRegistry   raw: 'postgres-interval',
+726 silly mapToRegistry   scope: null,
+726 silly mapToRegistry   name: 'postgres-interval',
+726 silly mapToRegistry   rawSpec: '',
+726 silly mapToRegistry   spec: 'latest',
+726 silly mapToRegistry   type: 'tag' }
+727 silly mapToRegistry uri https://registry.npmjs.org/postgres-interval
+728 verbose addNameRange registry:https://registry.npmjs.org/postgres-interval not in flight; fetching
+729 silly cache add args [ 'pg-int8@1.0.1', null ]
+730 verbose cache add spec pg-int8@1.0.1
+731 silly cache add parsed spec Result {
+731 silly cache add   raw: 'pg-int8@1.0.1',
+731 silly cache add   scope: null,
+731 silly cache add   name: 'pg-int8',
+731 silly cache add   rawSpec: '1.0.1',
+731 silly cache add   spec: '1.0.1',
+731 silly cache add   type: 'version' }
+732 silly addNamed pg-int8@1.0.1
+733 verbose addNamed "1.0.1" is a plain semver version for pg-int8
+734 silly mapToRegistry name pg-int8
+735 silly mapToRegistry using default registry
+736 silly mapToRegistry registry https://registry.npmjs.org/
+737 silly mapToRegistry data Result {
+737 silly mapToRegistry   raw: 'pg-int8',
+737 silly mapToRegistry   scope: null,
+737 silly mapToRegistry   name: 'pg-int8',
+737 silly mapToRegistry   rawSpec: '',
+737 silly mapToRegistry   spec: 'latest',
+737 silly mapToRegistry   type: 'tag' }
+738 silly mapToRegistry uri https://registry.npmjs.org/pg-int8
+739 verbose addNameVersion registry:https://registry.npmjs.org/pg-int8 not in flight; fetching
+740 verbose request uri https://registry.npmjs.org/postgres-array
+741 verbose request no auth needed
+742 info attempt registry request try #1 at 12:46:51 PM
+743 verbose etag W/"5cd81d11302de33c1375da9c575f222e"
+744 verbose lastModified Sat, 05 Jan 2019 04:46:41 GMT
+745 http request GET https://registry.npmjs.org/postgres-array
+746 verbose request uri https://registry.npmjs.org/postgres-date
+747 verbose request no auth needed
+748 info attempt registry request try #1 at 12:46:51 PM
+749 verbose etag W/"a740ec641e149beca9e713dda7555987"
+750 verbose lastModified Wed, 03 Apr 2019 12:01:23 GMT
+751 http request GET https://registry.npmjs.org/postgres-date
+752 verbose request uri https://registry.npmjs.org/postgres-bytea
+753 verbose request no auth needed
+754 info attempt registry request try #1 at 12:46:51 PM
+755 verbose etag W/"9b56d3f10571dd3c7081f4bebbbe7a4f"
+756 verbose lastModified Thu, 25 Apr 2019 18:09:38 GMT
+757 http request GET https://registry.npmjs.org/postgres-bytea
+758 verbose request uri https://registry.npmjs.org/postgres-interval
+759 verbose request no auth needed
+760 info attempt registry request try #1 at 12:46:51 PM
+761 verbose etag W/"4a18d45550d9a8c8fa693c2bc349d94b"
+762 verbose lastModified Sat, 23 Feb 2019 00:06:55 GMT
+763 http request GET https://registry.npmjs.org/postgres-interval
+764 verbose request uri https://registry.npmjs.org/pg-int8
+765 verbose request no auth needed
+766 info attempt registry request try #1 at 12:46:51 PM
+767 verbose etag W/"c60f0a4ef9b6a360c9119bbeec8a0289"
+768 verbose lastModified Sun, 27 May 2018 12:09:34 GMT
+769 http request GET https://registry.npmjs.org/pg-int8
+770 silly prepareForInstallMany adding split@~0.3 from pgpass dependencies
+771 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/package.json
+772 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer/package.json
+773 info preinstall buffer-writer@1.0.1
+774 silly cache add args [ 'split@~0.3', null ]
+775 verbose cache add spec split@~0.3
+776 silly cache add parsed spec Result {
+776 silly cache add   raw: 'split@~0.3',
+776 silly cache add   scope: null,
+776 silly cache add   name: 'split',
+776 silly cache add   rawSpec: '~0.3',
+776 silly cache add   spec: '>=0.3.0 <0.4.0',
+776 silly cache add   type: 'range' }
+777 silly addNamed split@>=0.3.0 <0.4.0
+778 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for split
+779 silly addNameRange { name: 'split', range: '>=0.3.0 <0.4.0', hasData: false }
+780 silly mapToRegistry name split
+781 silly mapToRegistry using default registry
+782 silly mapToRegistry registry https://registry.npmjs.org/
+783 silly mapToRegistry data Result {
+783 silly mapToRegistry   raw: 'split',
+783 silly mapToRegistry   scope: null,
+783 silly mapToRegistry   name: 'split',
+783 silly mapToRegistry   rawSpec: '',
+783 silly mapToRegistry   spec: 'latest',
+783 silly mapToRegistry   type: 'tag' }
+784 silly mapToRegistry uri https://registry.npmjs.org/split
+785 verbose addNameRange registry:https://registry.npmjs.org/split not in flight; fetching
+786 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer/package.json
+787 verbose request uri https://registry.npmjs.org/split
+788 verbose request no auth needed
+789 info attempt registry request try #1 at 12:46:51 PM
+790 verbose etag W/"edff76472bfd10522744f691904c144e"
+791 verbose lastModified Sat, 05 Jan 2019 13:03:59 GMT
+792 http request GET https://registry.npmjs.org/split
+793 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer/package.json
+794 silly install resolved []
+795 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+796 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+797 info linkStuff buffer-writer@1.0.1
+798 silly linkStuff buffer-writer@1.0.1 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+799 verbose linkBins buffer-writer@1.0.1
+800 verbose linkMans buffer-writer@1.0.1
+801 verbose rebuildBundles buffer-writer@1.0.1
+802 info install buffer-writer@1.0.1
+803 info postinstall buffer-writer@1.0.1
+804 verbose unlock done using /Users/laura/.npm/_locks/buffer-writer-3427793c6ce736ce.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/buffer-writer
+805 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver/package.json
+806 info preinstall semver@4.3.6
+807 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver/package.json
+808 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver/package.json
+809 silly install resolved []
+810 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+811 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+812 info linkStuff semver@4.3.6
+813 silly linkStuff semver@4.3.6 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+814 verbose linkBins semver@4.3.6
+815 verbose link bins [ { semver: './bin/semver' },
+815 verbose link bins   '/Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/.bin',
+815 verbose link bins   false ]
+816 verbose linkMans semver@4.3.6
+817 verbose rebuildBundles semver@4.3.6
+818 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/.bin/semver is being purged
+819 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/.bin/semver
+820 info install semver@4.3.6
+821 info postinstall semver@4.3.6
+822 verbose unlock done using /Users/laura/.npm/_locks/semver-1068a05a768a9917.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/semver
+823 http 304 https://registry.npmjs.org/postgres-array
+824 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+824 verbose headers   connection: 'keep-alive',
+824 verbose headers   'set-cookie': [ '__cfduid=d0d68c2be3ddd381fb48ebda5c2f601ca1582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+824 verbose headers   'cf-ray': '56a39ace3de7d12e-QRO',
+824 verbose headers   age: '888',
+824 verbose headers   'cache-control': 'public, max-age=300',
+824 verbose headers   etag: '"5cd81d11302de33c1375da9c575f222e"',
+824 verbose headers   'last-modified': 'Sat, 05 Jan 2019 04:46:41 GMT',
+824 verbose headers   vary: 'Accept-Encoding',
+824 verbose headers   'cf-cache-status': 'HIT',
+824 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+824 verbose headers   server: 'cloudflare' }
+825 silly get cb [ 304,
+825 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+825 silly get     connection: 'keep-alive',
+825 silly get     'set-cookie': [ '__cfduid=d0d68c2be3ddd381fb48ebda5c2f601ca1582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+825 silly get     'cf-ray': '56a39ace3de7d12e-QRO',
+825 silly get     age: '888',
+825 silly get     'cache-control': 'public, max-age=300',
+825 silly get     etag: '"5cd81d11302de33c1375da9c575f222e"',
+825 silly get     'last-modified': 'Sat, 05 Jan 2019 04:46:41 GMT',
+825 silly get     vary: 'Accept-Encoding',
+825 silly get     'cf-cache-status': 'HIT',
+825 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+825 silly get     server: 'cloudflare' } ]
+826 verbose etag https://registry.npmjs.org/postgres-array from cache
+827 verbose get saving postgres-array to /Users/laura/.npm/registry.npmjs.org/postgres-array/.cache.json
+828 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+829 silly addNameRange number 2 { name: 'postgres-array',
+829 silly addNameRange   range: '>=1.0.0 <1.1.0',
+829 silly addNameRange   hasData: true }
+830 silly addNameRange versions [ 'postgres-array',
+830 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0' ] ]
+831 silly addNamed postgres-array@1.0.3
+832 verbose addNamed "1.0.3" is a plain semver version for postgres-array
+833 http 304 https://registry.npmjs.org/postgres-bytea
+834 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+834 verbose headers   connection: 'keep-alive',
+834 verbose headers   'set-cookie': [ '__cfduid=d9dcac6f8542ffa56146daf405bf165d31582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+834 verbose headers   'cf-ray': '56a39ace4b57d0d8-QRO',
+834 verbose headers   age: '888',
+834 verbose headers   'cache-control': 'public, max-age=300',
+834 verbose headers   etag: '"9b56d3f10571dd3c7081f4bebbbe7a4f"',
+834 verbose headers   'last-modified': 'Thu, 25 Apr 2019 18:09:38 GMT',
+834 verbose headers   vary: 'Accept-Encoding',
+834 verbose headers   'cf-cache-status': 'HIT',
+834 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+834 verbose headers   server: 'cloudflare' }
+835 silly get cb [ 304,
+835 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+835 silly get     connection: 'keep-alive',
+835 silly get     'set-cookie': [ '__cfduid=d9dcac6f8542ffa56146daf405bf165d31582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+835 silly get     'cf-ray': '56a39ace4b57d0d8-QRO',
+835 silly get     age: '888',
+835 silly get     'cache-control': 'public, max-age=300',
+835 silly get     etag: '"9b56d3f10571dd3c7081f4bebbbe7a4f"',
+835 silly get     'last-modified': 'Thu, 25 Apr 2019 18:09:38 GMT',
+835 silly get     vary: 'Accept-Encoding',
+835 silly get     'cf-cache-status': 'HIT',
+835 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+835 silly get     server: 'cloudflare' } ]
+836 verbose etag https://registry.npmjs.org/postgres-bytea from cache
+837 verbose get saving postgres-bytea to /Users/laura/.npm/registry.npmjs.org/postgres-bytea/.cache.json
+838 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+839 http 304 https://registry.npmjs.org/postgres-date
+840 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+840 verbose headers   connection: 'keep-alive',
+840 verbose headers   'set-cookie': [ '__cfduid=dc51214f5987318d79a872e1bd583b4ae1582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+840 verbose headers   'cf-ray': '56a39ace4fb0d0a4-QRO',
+840 verbose headers   age: '888',
+840 verbose headers   'cache-control': 'public, max-age=300',
+840 verbose headers   etag: '"a740ec641e149beca9e713dda7555987"',
+840 verbose headers   'last-modified': 'Wed, 03 Apr 2019 12:01:23 GMT',
+840 verbose headers   vary: 'Accept-Encoding',
+840 verbose headers   'cf-cache-status': 'HIT',
+840 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+840 verbose headers   server: 'cloudflare' }
+841 silly get cb [ 304,
+841 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+841 silly get     connection: 'keep-alive',
+841 silly get     'set-cookie': [ '__cfduid=dc51214f5987318d79a872e1bd583b4ae1582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+841 silly get     'cf-ray': '56a39ace4fb0d0a4-QRO',
+841 silly get     age: '888',
+841 silly get     'cache-control': 'public, max-age=300',
+841 silly get     etag: '"a740ec641e149beca9e713dda7555987"',
+841 silly get     'last-modified': 'Wed, 03 Apr 2019 12:01:23 GMT',
+841 silly get     vary: 'Accept-Encoding',
+841 silly get     'cf-cache-status': 'HIT',
+841 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+841 silly get     server: 'cloudflare' } ]
+842 verbose etag https://registry.npmjs.org/postgres-date from cache
+843 verbose get saving postgres-date to /Users/laura/.npm/registry.npmjs.org/postgres-date/.cache.json
+844 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+845 http 304 https://registry.npmjs.org/postgres-interval
+846 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+846 verbose headers   connection: 'keep-alive',
+846 verbose headers   'set-cookie': [ '__cfduid=d5869e3b6c29dd7699016c8d9dc99a2e71582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+846 verbose headers   'cf-ray': '56a39ace5b55d0a8-QRO',
+846 verbose headers   age: '888',
+846 verbose headers   'cache-control': 'public, max-age=300',
+846 verbose headers   etag: '"4a18d45550d9a8c8fa693c2bc349d94b"',
+846 verbose headers   'last-modified': 'Sat, 23 Feb 2019 00:06:55 GMT',
+846 verbose headers   vary: 'Accept-Encoding',
+846 verbose headers   'cf-cache-status': 'HIT',
+846 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+846 verbose headers   server: 'cloudflare' }
+847 silly get cb [ 304,
+847 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+847 silly get     connection: 'keep-alive',
+847 silly get     'set-cookie': [ '__cfduid=d5869e3b6c29dd7699016c8d9dc99a2e71582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+847 silly get     'cf-ray': '56a39ace5b55d0a8-QRO',
+847 silly get     age: '888',
+847 silly get     'cache-control': 'public, max-age=300',
+847 silly get     etag: '"4a18d45550d9a8c8fa693c2bc349d94b"',
+847 silly get     'last-modified': 'Sat, 23 Feb 2019 00:06:55 GMT',
+847 silly get     vary: 'Accept-Encoding',
+847 silly get     'cf-cache-status': 'HIT',
+847 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+847 silly get     server: 'cloudflare' } ]
+848 verbose etag https://registry.npmjs.org/postgres-interval from cache
+849 verbose get saving postgres-interval to /Users/laura/.npm/registry.npmjs.org/postgres-interval/.cache.json
+850 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+851 silly addNameRange number 2 { name: 'postgres-bytea',
+851 silly addNameRange   range: '>=1.0.0 <1.1.0',
+851 silly addNameRange   hasData: true }
+852 silly addNameRange versions [ 'postgres-bytea', [ '1.0.0', '2.0.0' ] ]
+853 silly addNamed postgres-bytea@1.0.0
+854 verbose addNamed "1.0.0" is a plain semver version for postgres-bytea
+855 silly addNameRange number 2 { name: 'postgres-date', range: '>=1.0.0 <1.1.0', hasData: true }
+856 silly addNameRange versions [ 'postgres-date',
+856 silly addNameRange   [ '0.0.0', '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4' ] ]
+857 silly addNamed postgres-date@1.0.4
+858 verbose addNamed "1.0.4" is a plain semver version for postgres-date
+859 http 304 https://registry.npmjs.org/pg-int8
+860 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+860 verbose headers   connection: 'keep-alive',
+860 verbose headers   'set-cookie': [ '__cfduid=dd55afdabb29aba2aa96d913a8a1f97b11582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+860 verbose headers   'cf-ray': '56a39ace5ffbd0cc-QRO',
+860 verbose headers   age: '888',
+860 verbose headers   'cache-control': 'public, max-age=300',
+860 verbose headers   etag: '"c60f0a4ef9b6a360c9119bbeec8a0289"',
+860 verbose headers   'last-modified': 'Sun, 27 May 2018 12:09:34 GMT',
+860 verbose headers   vary: 'Accept-Encoding',
+860 verbose headers   'cf-cache-status': 'HIT',
+860 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+860 verbose headers   server: 'cloudflare' }
+861 silly get cb [ 304,
+861 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+861 silly get     connection: 'keep-alive',
+861 silly get     'set-cookie': [ '__cfduid=dd55afdabb29aba2aa96d913a8a1f97b11582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+861 silly get     'cf-ray': '56a39ace5ffbd0cc-QRO',
+861 silly get     age: '888',
+861 silly get     'cache-control': 'public, max-age=300',
+861 silly get     etag: '"c60f0a4ef9b6a360c9119bbeec8a0289"',
+861 silly get     'last-modified': 'Sun, 27 May 2018 12:09:34 GMT',
+861 silly get     vary: 'Accept-Encoding',
+861 silly get     'cf-cache-status': 'HIT',
+861 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+861 silly get     server: 'cloudflare' } ]
+862 verbose etag https://registry.npmjs.org/pg-int8 from cache
+863 verbose get saving pg-int8 to /Users/laura/.npm/registry.npmjs.org/pg-int8/.cache.json
+864 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+865 silly addNameRange number 2 { name: 'postgres-interval',
+865 silly addNameRange   range: '>=1.1.0 <2.0.0',
+865 silly addNameRange   hasData: true }
+866 silly addNameRange versions [ 'postgres-interval',
+866 silly addNameRange   [ '1.0.0',
+866 silly addNameRange     '0.0.1',
+866 silly addNameRange     '1.0.1',
+866 silly addNameRange     '1.0.2',
+866 silly addNameRange     '1.1.0',
+866 silly addNameRange     '1.1.1',
+866 silly addNameRange     '1.1.2',
+866 silly addNameRange     '1.2.0' ] ]
+867 silly addNamed postgres-interval@1.2.0
+868 verbose addNamed "1.2.0" is a plain semver version for postgres-interval
+869 silly cache afterAdd postgres-bytea@1.0.0
+870 verbose afterAdd /Users/laura/.npm/postgres-bytea/1.0.0/package/package.json not in flight; writing
+871 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+872 silly cache afterAdd postgres-date@1.0.4
+873 verbose afterAdd /Users/laura/.npm/postgres-date/1.0.4/package/package.json not in flight; writing
+874 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+875 silly cache afterAdd postgres-interval@1.2.0
+876 verbose afterAdd /Users/laura/.npm/postgres-interval/1.2.0/package/package.json not in flight; writing
+877 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+878 silly cache afterAdd postgres-array@1.0.3
+879 verbose afterAdd /Users/laura/.npm/postgres-array/1.0.3/package/package.json not in flight; writing
+880 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+881 verbose afterAdd /Users/laura/.npm/postgres-bytea/1.0.0/package/package.json written
+882 verbose afterAdd /Users/laura/.npm/postgres-date/1.0.4/package/package.json written
+883 verbose afterAdd /Users/laura/.npm/postgres-interval/1.2.0/package/package.json written
+884 verbose afterAdd /Users/laura/.npm/postgres-array/1.0.3/package/package.json written
+885 silly cache afterAdd pg-int8@1.0.1
+886 verbose afterAdd /Users/laura/.npm/pg-int8/1.0.1/package/package.json not in flight; writing
+887 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+888 verbose afterAdd /Users/laura/.npm/pg-int8/1.0.1/package/package.json written
+889 silly install resolved [ { name: 'postgres-bytea',
+889 silly install resolved     main: 'index.js',
+889 silly install resolved     version: '1.0.0',
+889 silly install resolved     description: 'Postgres bytea parser',
+889 silly install resolved     license: 'MIT',
+889 silly install resolved     repository:
+889 silly install resolved      { type: 'git',
+889 silly install resolved        url: 'git+https://github.com/bendrucker/postgres-bytea.git' },
+889 silly install resolved     author:
+889 silly install resolved      { name: 'Ben Drucker',
+889 silly install resolved        email: 'bvdrucker@gmail.com',
+889 silly install resolved        url: 'bendrucker.me' },
+889 silly install resolved     engines: { node: '>=0.10.0' },
+889 silly install resolved     scripts: { test: 'standard && tape test.js' },
+889 silly install resolved     keywords: [ 'bytea', 'postgres', 'binary', 'parser' ],
+889 silly install resolved     dependencies: {},
+889 silly install resolved     devDependencies: { tape: '^4.0.0', standard: '^4.0.0' },
+889 silly install resolved     files: [ 'index.js', 'readme.md' ],
+889 silly install resolved     gitHead: '6a1c2665b40e7a6548d7102a8b0fb4905a1a90b7',
+889 silly install resolved     bugs: { url: 'https://github.com/bendrucker/postgres-bytea/issues' },
+889 silly install resolved     homepage: 'https://github.com/bendrucker/postgres-bytea#readme',
+889 silly install resolved     _id: 'postgres-bytea@1.0.0',
+889 silly install resolved     _shasum: '027b533c0aa890e26d172d47cf9ccecc521acd35',
+889 silly install resolved     _from: 'postgres-bytea@>=1.0.0 <1.1.0',
+889 silly install resolved     _npmVersion: '2.11.0',
+889 silly install resolved     _nodeVersion: '2.2.1',
+889 silly install resolved     _npmUser: { name: 'bendrucker', email: 'bvdrucker@gmail.com' },
+889 silly install resolved     dist:
+889 silly install resolved      { shasum: '027b533c0aa890e26d172d47cf9ccecc521acd35',
+889 silly install resolved        tarball: 'https://registry.npmjs.org/postgres-bytea/-/postgres-bytea-1.0.0.tgz' },
+889 silly install resolved     maintainers: [ [Object] ],
+889 silly install resolved     directories: {},
+889 silly install resolved     _resolved: 'https://registry.npmjs.org/postgres-bytea/-/postgres-bytea-1.0.0.tgz',
+889 silly install resolved     readme: 'ERROR: No README data found!' },
+889 silly install resolved   { name: 'postgres-date',
+889 silly install resolved     main: 'index.js',
+889 silly install resolved     version: '1.0.4',
+889 silly install resolved     description: 'Postgres date column parser',
+889 silly install resolved     license: 'MIT',
+889 silly install resolved     repository:
+889 silly install resolved      { type: 'git',
+889 silly install resolved        url: 'git+https://github.com/bendrucker/postgres-date.git' },
+889 silly install resolved     author:
+889 silly install resolved      { name: 'Ben Drucker',
+889 silly install resolved        email: 'bvdrucker@gmail.com',
+889 silly install resolved        url: 'bendrucker.me' },
+889 silly install resolved     engines: { node: '>=0.10.0' },
+889 silly install resolved     scripts: { test: 'standard && tape test.js' },
+889 silly install resolved     keywords: [ 'postgres', 'date', 'parser' ],
+889 silly install resolved     dependencies: {},
+889 silly install resolved     devDependencies: { tape: '^4.0.0', standard: '^12.0.1' },
+889 silly install resolved     gitHead: '1b6c45f03ea18cff85494d294d2a4af6c8144f4b',
+889 silly install resolved     bugs: { url: 'https://github.com/bendrucker/postgres-date/issues' },
+889 silly install resolved     homepage: 'https://github.com/bendrucker/postgres-date#readme',
+889 silly install resolved     _id: 'postgres-date@1.0.4',
+889 silly install resolved     _nodeVersion: '10.15.0',
+889 silly install resolved     _npmVersion: '6.7.0',
+889 silly install resolved     dist:
+889 silly install resolved      { integrity: 'sha512-bESRvKVuTrjoBluEcpv2346+6kgB7UlnqWZsnbnCccTNq/pqfj1j6oBaN5+b/NrDXepYUT/HKadqv3iS9lJuVA==',
+889 silly install resolved        shasum: '1c2728d62ef1bff49abdd35c1f86d4bdf118a728',
+889 silly install resolved        tarball: 'https://registry.npmjs.org/postgres-date/-/postgres-date-1.0.4.tgz',
+889 silly install resolved        fileCount: 4,
+889 silly install resolved        unpackedSize: 4946,
+889 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcpKCOCRA9TVsSAnZWagAAfJEQAIpyJwq+pu5w1JtoHCNG\nrDhkD6n7pHz8lk0YvvrO+YC/FDaJVJQXMklC8dt8us7Y1RVP8dgJR9Wjs0SU\ncWkdPgKi+rV6XxoiF3BIPZliSAnvw/bMS1DnyUyVPJ2nYTsZWetvd26NmZrP\nOvGS0gM2ohzie+4shEEScBvF02LXQ6E+NvvN22KouJlU1x/9eUQHi9Obx0Eb\n1qsf1Lkw3yC0z9dGvxV+bJcdn7WSih3grIEt0oEkmY9HGdQT6wflWlKUpdQa\nkOyQdmcOAiFBYtOEjwTh2qFW6pWRf4CvUz+/cgBPltF3imA8GRe1zvEKQdOU\n/6t8HwmyQ7MYMla1dWA4SoyU1neAtdmNKuu6KipstH9W7UCDHno+jO4RbjxY\nynrS5bxNcooV5x3TcJESUZdtGfDL1dL/CatMqsAVzDDKp7TK9tpKiRppcMcC\nIJv79zGbFNph9UhvcEWU/U1CC5PevmDW7bDKX2TVy8QfnedrDqbcOiVtRvg5\nUbMG0HnxJmsnu6my6ot20wRRK9NNDvG9Bx3JWcZfKSP+hXBdzR/jmVNWWNE+\nnYgr4Pgf7dEt8TcUo8v4OM1oQ3MsWdPShy41LtpToCjkIn9DKPkSOAEUnEC3\nGr5vBihRzU8mjOTCUt9i4DBg1wLo6dWpPIvqTFQJPtPud+mU9FnQf7ixMHlV\nDZqF\r\n=itcV\r\n-----END PGP SIGNATURE-----\r\n' },
+889 silly install resolved     maintainers: [ [Object] ],
+889 silly install resolved     _npmUser: { name: 'bendrucker', email: 'bvdrucker@gmail.com' },
+889 silly install resolved     directories: {},
+889 silly install resolved     _npmOperationalInternal:
+889 silly install resolved      { host: 's3://npm-registry-packages',
+889 silly install resolved        tmp: 'tmp/postgres-date_1.0.4_1554292877538_0.4091171012147028' },
+889 silly install resolved     _hasShrinkwrap: false,
+889 silly install resolved     _shasum: '1c2728d62ef1bff49abdd35c1f86d4bdf118a728',
+889 silly install resolved     _resolved: 'https://registry.npmjs.org/postgres-date/-/postgres-date-1.0.4.tgz',
+889 silly install resolved     _from: 'postgres-date@>=1.0.0 <1.1.0',
+889 silly install resolved     readme: 'ERROR: No README data found!' },
+889 silly install resolved   { name: 'postgres-interval',
+889 silly install resolved     main: 'index.js',
+889 silly install resolved     version: '1.2.0',
+889 silly install resolved     description: 'Parse Postgres interval columns',
+889 silly install resolved     license: 'MIT',
+889 silly install resolved     repository:
+889 silly install resolved      { type: 'git',
+889 silly install resolved        url: 'git+https://github.com/bendrucker/postgres-interval.git' },
+889 silly install resolved     author:
+889 silly install resolved      { name: 'Ben Drucker',
+889 silly install resolved        email: 'bvdrucker@gmail.com',
+889 silly install resolved        url: 'bendrucker.me' },
+889 silly install resolved     engines: { node: '>=0.10.0' },
+889 silly install resolved     scripts: { test: 'standard && tape test.js' },
+889 silly install resolved     keywords: [ 'postgres', 'interval', 'parser' ],
+889 silly install resolved     dependencies: { xtend: '^4.0.0' },
+889 silly install resolved     devDependencies: { tape: '^4.0.0', standard: '^12.0.1' },
+889 silly install resolved     gitHead: 'c92e936bf6383691b1572f3e85597fb4d0518e96',
+889 silly install resolved     bugs: { url: 'https://github.com/bendrucker/postgres-interval/issues' },
+889 silly install resolved     homepage: 'https://github.com/bendrucker/postgres-interval#readme',
+889 silly install resolved     _id: 'postgres-interval@1.2.0',
+889 silly install resolved     _npmVersion: '5.6.0',
+889 silly install resolved     _nodeVersion: '8.9.4',
+889 silly install resolved     _npmUser: { name: 'bendrucker', email: 'bvdrucker@gmail.com' },
+889 silly install resolved     dist:
+889 silly install resolved      { integrity: 'sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==',
+889 silly install resolved        shasum: 'b460c82cb1587507788819a06aa0fffdb3544695',
+889 silly install resolved        tarball: 'https://registry.npmjs.org/postgres-interval/-/postgres-interval-1.2.0.tgz',
+889 silly install resolved        fileCount: 5,
+889 silly install resolved        unpackedSize: 6727,
+889 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJccI6cCRA9TVsSAnZWagAAnmgP/2Dh0iWFe0J8D+0dm8X9\nVpVe7tNKiXro7uQMjqDzQ0lOP2Um3q5PfLOwMU6+KZ1y04Yt8VJPo+9B3evz\n/UscKtW+ALMNXNoDI3uUrcmvr5MmftuiqqrRGIRa397rj6bY6EUBFcMmDy6m\nS+9nWRycF0ak6mDCdJikMshMHauH36mMdhSe4A+NDmQ3rTV891EccWixuzRH\nLVvSbzKO0fc0IM3ZOdQ5i+WRvmSXMx0g7DWkhk00upYd7l3KikL6d5SO4CQ8\n3k42uYi8JJLcylXFaLbFSrs3zUliJTmIw22xSRx0R3ojBO+CTBW36M+z0IY/\nGotDvjo6UDHhTEW775OaLEnPKd0dPuE93RqPGccR5ZE9ekX12QtBiSDEnVdZ\n+UP4Tpf6AxQLM9rdurlSUfDkjLMNSqAiJqsOA7Tcvp7XqlLG/4TD9RcADJdF\nPXGcIdWfoorLPjsxbia9WbsvMIMk9TXhlmJ6AK9XarmK2qyTFjl925nYn0KU\n1Jm5GaTdwop6cCD+DL+pRw6RV2bCMC8j8UNVvDPEoilrY1kJ1kuWr8v8V3bA\n1yRUXGiJF8NE+Kr76GhKDT+wGHx9vrnyJ5HbX0J5R9Q5ZP96UvQj0zv3RxOW\nIOf/ytVrbpVHrtGD8K7pkymb8vktQAkkoFTmUM6imLFnjiEHJEfBTcuXkwxj\n6zOn\r\n=XLMY\r\n-----END PGP SIGNATURE-----\r\n' },
+889 silly install resolved     maintainers: [ [Object] ],
+889 silly install resolved     directories: {},
+889 silly install resolved     _npmOperationalInternal:
+889 silly install resolved      { host: 's3://npm-registry-packages',
+889 silly install resolved        tmp: 'tmp/postgres-interval_1.2.0_1550880411811_0.41011870344636336' },
+889 silly install resolved     _hasShrinkwrap: false,
+889 silly install resolved     _shasum: 'b460c82cb1587507788819a06aa0fffdb3544695',
+889 silly install resolved     _resolved: 'https://registry.npmjs.org/postgres-interval/-/postgres-interval-1.2.0.tgz',
+889 silly install resolved     _from: 'postgres-interval@>=1.1.0 <2.0.0',
+889 silly install resolved     readme: 'ERROR: No README data found!' },
+889 silly install resolved   { name: 'postgres-array',
+889 silly install resolved     main: 'index.js',
+889 silly install resolved     version: '1.0.3',
+889 silly install resolved     description: 'Parse postgres array columns',
+889 silly install resolved     license: 'MIT',
+889 silly install resolved     repository:
+889 silly install resolved      { type: 'git',
+889 silly install resolved        url: 'git+https://github.com/bendrucker/postgres-array.git' },
+889 silly install resolved     author:
+889 silly install resolved      { name: 'Ben Drucker',
+889 silly install resolved        email: 'bvdrucker@gmail.com',
+889 silly install resolved        url: 'bendrucker.me' },
+889 silly install resolved     engines: { node: '>=0.10.0' },
+889 silly install resolved     scripts: { test: 'standard && tape test.js' },
+889 silly install resolved     types: 'index.d.ts',
+889 silly install resolved     keywords: [ 'postgres', 'array', 'parser' ],
+889 silly install resolved     dependencies: {},
+889 silly install resolved     devDependencies: { ap: '^0.2.0', standard: '^4.0.0', tape: '^4.0.0' },
+889 silly install resolved     gitHead: 'd73c5b27dc88b462f88d559f6a050d6770f8fea7',
+889 silly install resolved     bugs: { url: 'https://github.com/bendrucker/postgres-array/issues' },
+889 silly install resolved     homepage: 'https://github.com/bendrucker/postgres-array#readme',
+889 silly install resolved     _id: 'postgres-array@1.0.3',
+889 silly install resolved     _npmVersion: '6.2.0',
+889 silly install resolved     _nodeVersion: '8.11.3',
+889 silly install resolved     _npmUser: { name: 'bendrucker', email: 'bvdrucker@gmail.com' },
+889 silly install resolved     dist:
+889 silly install resolved      { integrity: 'sha512-5wClXrAP0+78mcsNX3/ithQ5exKvCyK5lr5NEEEeGwwM6NJdQgzIJBVxLvRW+huFpX92F2QnZ5CcokH0VhK2qQ==',
+889 silly install resolved        shasum: 'c561fc3b266b21451fc6555384f4986d78ec80f5',
+889 silly install resolved        tarball: 'https://registry.npmjs.org/postgres-array/-/postgres-array-1.0.3.tgz',
+889 silly install resolved        fileCount: 5,
+889 silly install resolved        unpackedSize: 4703,
+889 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJboCJMCRA9TVsSAnZWagAAkisP/2TI+5TteSjKoYFRWLSi\nmvE8Up87BAHQpZbu1lvSDTrVZ/vrGzSNOF5t/dpuzpFURaAH96lB0vpIyuTj\nlSStKRRYIPEv/NilLK8nDUswVl1z5IAXghfHB9c9OtXM5YZ2Pj56rzKl1evG\njoYQsSCUrF57lysBO1blAQXGvO8EBC8oJj8y4NNxsEXCARagoQRdMtnBdUA6\nQ8gFayh2phETbdckuGqWe2/ah4mjIjIU2+3884s4V6hVc7iYm55DJ6SmLpTy\nAALIG18PffKe7bwWOfakr1osdPVG2ynTyWh+7MCCW2tyBmsUhnyJ3soD8h3u\n+g31emHIKitT4fPM26kEQRpUvQW4pifyfxIbJDGc/YweIRJsGLib0RgWzRrg\nQtfirDm2CO3DHeQAfFueYc0fQ1e/v60qNfu60iBbpJRIOc+cwqdsJTG6e2EX\nR84xmrn8cwIKjI0Gs8LlPRVerpY+142nUScSxrLAJDPQfYLsjRfX31Xf6M6g\nyLcb7NGCXqooq/IaT+Ct5sKmydKEI/fCWMkEHuVl/MOdSidBekY2l7iNKcpQ\nbVy8U05RSlfd40kkHYDsiu/E2gPPAw+NdQvPbA7desGeA/ZgpiHYEXzV4n0e\nAZr0xpNYG0wDm7JXsJ33vn2hfbTxnNS8c+51bPo0zXRsl9C9yiqdrbFRqAqB\n44/L\r\n=2Kst\r\n-----END PGP SIGNATURE-----\r\n' },
+889 silly install resolved     maintainers: [ [Object] ],
+889 silly install resolved     directories: {},
+889 silly install resolved     _npmOperationalInternal:
+889 silly install resolved      { host: 's3://npm-registry-packages',
+889 silly install resolved        tmp: 'tmp/postgres-array_1.0.3_1537221195637_0.17872985537660502' },
+889 silly install resolved     _hasShrinkwrap: false,
+889 silly install resolved     _shasum: 'c561fc3b266b21451fc6555384f4986d78ec80f5',
+889 silly install resolved     _resolved: 'https://registry.npmjs.org/postgres-array/-/postgres-array-1.0.3.tgz',
+889 silly install resolved     _from: 'postgres-array@>=1.0.0 <1.1.0',
+889 silly install resolved     readme: 'ERROR: No README data found!' },
+889 silly install resolved   { name: 'pg-int8',
+889 silly install resolved     version: '1.0.1',
+889 silly install resolved     description: '64-bit big-endian signed integer-to-string conversion',
+889 silly install resolved     bugs: { url: 'https://github.com/charmander/pg-int8/issues' },
+889 silly install resolved     license: 'ISC',
+889 silly install resolved     files: [ 'index.js' ],
+889 silly install resolved     repository:
+889 silly install resolved      { type: 'git',
+889 silly install resolved        url: 'git+https://github.com/charmander/pg-int8.git' },
+889 silly install resolved     scripts: { test: 'tap test' },
+889 silly install resolved     devDependencies: { '@charmander/eslint-config-base': '1.0.2', tap: '10.7.3' },
+889 silly install resolved     engines: { node: '>=4.0.0' },
+889 silly install resolved     gitHead: '91d0683b3d0f9b24176bbbffbd03680cd4c97b17',
+889 silly install resolved     homepage: 'https://github.com/charmander/pg-int8#readme',
+889 silly install resolved     _id: 'pg-int8@1.0.1',
+889 silly install resolved     _npmVersion: '5.5.1-canary.5',
+889 silly install resolved     _nodeVersion: '9.1.0',
+889 silly install resolved     _npmUser: { name: 'charmander', email: '~@charmander.me' },
+889 silly install resolved     dist:
+889 silly install resolved      { integrity: 'sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==',
+889 silly install resolved        shasum: '943bd463bf5b71b4170115f80f8efc9a0c0eb78c',
+889 silly install resolved        tarball: 'https://registry.npmjs.org/pg-int8/-/pg-int8-1.0.1.tgz' },
+889 silly install resolved     maintainers: [ [Object] ],
+889 silly install resolved     _npmOperationalInternal:
+889 silly install resolved      { host: 's3://npm-registry-packages',
+889 silly install resolved        tmp: 'tmp/pg-int8-1.0.1.tgz_1510699189921_0.7000504340976477' },
+889 silly install resolved     directories: {},
+889 silly install resolved     _shasum: '943bd463bf5b71b4170115f80f8efc9a0c0eb78c',
+889 silly install resolved     _resolved: 'https://registry.npmjs.org/pg-int8/-/pg-int8-1.0.1.tgz',
+889 silly install resolved     _from: 'pg-int8@1.0.1',
+889 silly install resolved     readme: 'ERROR: No README data found!' } ]
+890 info install postgres-bytea@1.0.0 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+891 info install postgres-date@1.0.4 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+892 info install postgres-interval@1.2.0 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+893 info install postgres-array@1.0.3 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+894 info install pg-int8@1.0.1 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+895 info installOne postgres-bytea@1.0.0
+896 verbose installOne of postgres-bytea to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types not in flight; installing
+897 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+898 info installOne postgres-date@1.0.4
+899 verbose installOne of postgres-date to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types not in flight; installing
+900 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+901 info installOne postgres-interval@1.2.0
+902 verbose installOne of postgres-interval to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types not in flight; installing
+903 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+904 info installOne postgres-array@1.0.3
+905 verbose installOne of postgres-array to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types not in flight; installing
+906 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+907 info installOne pg-int8@1.0.1
+908 verbose installOne of pg-int8 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types not in flight; installing
+909 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+910 verbose lock using /Users/laura/.npm/_locks/postgres-bytea-30ce7047ec38158b.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+911 verbose lock using /Users/laura/.npm/_locks/postgres-date-1ce2d54b5699ee21.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+912 verbose lock using /Users/laura/.npm/_locks/postgres-interval-fb4e598c12495d0a.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+913 verbose lock using /Users/laura/.npm/_locks/postgres-array-197d7bd6a70c58f0.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+914 verbose lock using /Users/laura/.npm/_locks/pg-int8-96e365baea0a6942.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+915 silly install write writing postgres-bytea 1.0.0 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+916 silly install write writing postgres-date 1.0.4 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+917 silly install write writing postgres-interval 1.2.0 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+918 silly install write writing postgres-array 1.0.3 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+919 silly install write writing pg-int8 1.0.1 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+920 verbose unbuild node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+921 verbose unbuild node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+922 verbose unbuild node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+923 verbose unbuild node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+924 verbose unbuild node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+925 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+926 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+927 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+928 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+929 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+930 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+931 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+932 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+933 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8 is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+934 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+935 verbose tar unpack /Users/laura/.npm/postgres-bytea/1.0.0/package.tgz
+936 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+937 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea is being purged
+938 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+939 verbose tar unpack /Users/laura/.npm/postgres-date/1.0.4/package.tgz
+940 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+941 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date is being purged
+942 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+943 verbose tar unpack /Users/laura/.npm/postgres-interval/1.2.0/package.tgz
+944 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+945 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval is being purged
+946 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+947 verbose tar unpack /Users/laura/.npm/postgres-array/1.0.3/package.tgz
+948 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+949 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array is being purged
+950 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+951 verbose tar unpack /Users/laura/.npm/pg-int8/1.0.1/package.tgz
+952 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+953 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8 is being purged
+954 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+955 silly gunzTarPerm modes [ '755', '644' ]
+956 silly gunzTarPerm modes [ '755', '644' ]
+957 silly gunzTarPerm modes [ '755', '644' ]
+958 silly gunzTarPerm modes [ '755', '644' ]
+959 silly gunzTarPerm modes [ '755', '644' ]
+960 http 304 https://registry.npmjs.org/split
+961 verbose headers { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+961 verbose headers   connection: 'keep-alive',
+961 verbose headers   'set-cookie': [ '__cfduid=d63849ceccc7c2ae6f0185b73d188d9971582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+961 verbose headers   'cf-ray': '56a39acec85ad0b0-QRO',
+961 verbose headers   age: '888',
+961 verbose headers   'cache-control': 'public, max-age=300',
+961 verbose headers   etag: '"edff76472bfd10522744f691904c144e"',
+961 verbose headers   'last-modified': 'Sat, 05 Jan 2019 13:03:59 GMT',
+961 verbose headers   vary: 'Accept-Encoding',
+961 verbose headers   'cf-cache-status': 'HIT',
+961 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+961 verbose headers   server: 'cloudflare' }
+962 silly get cb [ 304,
+962 silly get   { date: 'Mon, 24 Feb 2020 18:46:51 GMT',
+962 silly get     connection: 'keep-alive',
+962 silly get     'set-cookie': [ '__cfduid=d63849ceccc7c2ae6f0185b73d188d9971582570011; expires=Wed, 25-Mar-20 18:46:51 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+962 silly get     'cf-ray': '56a39acec85ad0b0-QRO',
+962 silly get     age: '888',
+962 silly get     'cache-control': 'public, max-age=300',
+962 silly get     etag: '"edff76472bfd10522744f691904c144e"',
+962 silly get     'last-modified': 'Sat, 05 Jan 2019 13:03:59 GMT',
+962 silly get     vary: 'Accept-Encoding',
+962 silly get     'cf-cache-status': 'HIT',
+962 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+962 silly get     server: 'cloudflare' } ]
+963 verbose etag https://registry.npmjs.org/split from cache
+964 verbose get saving split to /Users/laura/.npm/registry.npmjs.org/split/.cache.json
+965 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+966 silly gunzTarPerm extractEntry package.json
+967 silly gunzTarPerm extractEntry package.json
+968 silly gunzTarPerm extractEntry package.json
+969 silly gunzTarPerm extractEntry package.json
+970 silly gunzTarPerm extractEntry index.js
+971 silly gunzTarPerm extractEntry license
+972 silly addNameRange number 2 { name: 'split', range: '>=0.3.0 <0.4.0', hasData: true }
+973 silly addNameRange versions [ 'split',
+973 silly addNameRange   [ '0.0.0',
+973 silly addNameRange     '0.1.0',
+973 silly addNameRange     '0.1.1',
+973 silly addNameRange     '0.1.2',
+973 silly addNameRange     '0.2.0',
+973 silly addNameRange     '0.2.1',
+973 silly addNameRange     '0.2.3',
+973 silly addNameRange     '0.2.4',
+973 silly addNameRange     '0.2.5',
+973 silly addNameRange     '0.2.6',
+973 silly addNameRange     '0.2.7',
+973 silly addNameRange     '0.2.8',
+973 silly addNameRange     '0.2.9',
+973 silly addNameRange     '0.2.10',
+973 silly addNameRange     '0.3.0',
+973 silly addNameRange     '0.3.1',
+973 silly addNameRange     '0.3.2',
+973 silly addNameRange     '0.3.3',
+973 silly addNameRange     '1.0.0',
+973 silly addNameRange     '1.0.1' ] ]
+974 silly addNamed split@0.3.3
+975 verbose addNamed "0.3.3" is a plain semver version for split
+976 silly gunzTarPerm extractEntry index.js
+977 silly gunzTarPerm extractEntry license
+978 silly gunzTarPerm extractEntry index.d.ts
+979 silly gunzTarPerm extractEntry index.js
+980 silly gunzTarPerm extractEntry index.js
+981 silly gunzTarPerm extractEntry LICENSE
+982 silly mapToRegistry name split
+983 silly mapToRegistry using default registry
+984 silly mapToRegistry registry https://registry.npmjs.org/
+985 silly mapToRegistry data Result {
+985 silly mapToRegistry   raw: 'split',
+985 silly mapToRegistry   scope: null,
+985 silly mapToRegistry   name: 'split',
+985 silly mapToRegistry   rawSpec: '',
+985 silly mapToRegistry   spec: 'latest',
+985 silly mapToRegistry   type: 'tag' }
+986 silly mapToRegistry uri https://registry.npmjs.org/split
+987 verbose addRemoteTarball https://registry.npmjs.org/split/-/split-0.3.3.tgz not in flight; adding
+988 verbose addRemoteTarball [ 'https://registry.npmjs.org/split/-/split-0.3.3.tgz',
+988 verbose addRemoteTarball   'cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f' ]
+989 info retry fetch attempt 1 at 12:46:52 PM
+990 info attempt registry request try #1 at 12:46:52 PM
+991 http fetch GET https://registry.npmjs.org/split/-/split-0.3.3.tgz
+992 silly gunzTarPerm extractEntry package.json
+993 silly gunzTarPerm extractEntry readme.md
+994 silly gunzTarPerm extractEntry README.md
+995 silly gunzTarPerm extractEntry index.d.ts
+996 silly gunzTarPerm extractEntry index.js
+997 silly gunzTarPerm extractEntry readme.md
+998 silly gunzTarPerm extractEntry license
+999 silly gunzTarPerm extractEntry readme.md
+1000 silly gunzTarPerm extractEntry license
+1001 silly gunzTarPerm extractEntry readme.md
+1002 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8/package.json
+1003 info preinstall pg-int8@1.0.1
+1004 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8/package.json
+1005 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea/package.json
+1006 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date/package.json
+1007 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8/package.json
+1008 info preinstall postgres-bytea@1.0.0
+1009 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea/package.json
+1010 info preinstall postgres-date@1.0.4
+1011 silly install resolved []
+1012 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+1013 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+1014 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date/package.json
+1015 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea/package.json
+1016 info linkStuff pg-int8@1.0.1
+1017 silly linkStuff pg-int8@1.0.1 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules as its parent node_modules
+1018 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/package.json
+1019 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date/package.json
+1020 info preinstall postgres-interval@1.2.0
+1021 silly install resolved []
+1022 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+1023 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+1024 verbose linkBins pg-int8@1.0.1
+1025 verbose linkMans pg-int8@1.0.1
+1026 verbose rebuildBundles pg-int8@1.0.1
+1027 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/package.json
+1028 info install pg-int8@1.0.1
+1029 silly install resolved []
+1030 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+1031 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+1032 info postinstall pg-int8@1.0.1
+1033 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array/package.json
+1034 info linkStuff postgres-bytea@1.0.0
+1035 silly linkStuff postgres-bytea@1.0.0 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules as its parent node_modules
+1036 http fetch 200 https://registry.npmjs.org/split/-/split-0.3.3.tgz
+1037 verbose unlock done using /Users/laura/.npm/_locks/pg-int8-96e365baea0a6942.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/pg-int8
+1038 info linkStuff postgres-date@1.0.4
+1039 silly linkStuff postgres-date@1.0.4 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules as its parent node_modules
+1040 silly prepareForInstallMany adding xtend@^4.0.0 from postgres-interval dependencies
+1041 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/package.json
+1042 info preinstall postgres-array@1.0.3
+1043 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array/package.json
+1044 verbose linkBins postgres-bytea@1.0.0
+1045 verbose linkMans postgres-bytea@1.0.0
+1046 verbose rebuildBundles postgres-bytea@1.0.0
+1047 info install postgres-bytea@1.0.0
+1048 verbose linkBins postgres-date@1.0.4
+1049 verbose linkMans postgres-date@1.0.4
+1050 verbose rebuildBundles postgres-date@1.0.4
+1051 silly fetchAndShaCheck shasum cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f
+1052 info postinstall postgres-bytea@1.0.0
+1053 info install postgres-date@1.0.4
+1054 silly cache add args [ 'xtend@^4.0.0', null ]
+1055 verbose cache add spec xtend@^4.0.0
+1056 silly cache add parsed spec Result {
+1056 silly cache add   raw: 'xtend@^4.0.0',
+1056 silly cache add   scope: null,
+1056 silly cache add   name: 'xtend',
+1056 silly cache add   rawSpec: '^4.0.0',
+1056 silly cache add   spec: '>=4.0.0 <5.0.0',
+1056 silly cache add   type: 'range' }
+1057 silly addNamed xtend@>=4.0.0 <5.0.0
+1058 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for xtend
+1059 silly addNameRange { name: 'xtend', range: '>=4.0.0 <5.0.0', hasData: false }
+1060 silly mapToRegistry name xtend
+1061 silly mapToRegistry using default registry
+1062 silly mapToRegistry registry https://registry.npmjs.org/
+1063 silly mapToRegistry data Result {
+1063 silly mapToRegistry   raw: 'xtend',
+1063 silly mapToRegistry   scope: null,
+1063 silly mapToRegistry   name: 'xtend',
+1063 silly mapToRegistry   rawSpec: '',
+1063 silly mapToRegistry   spec: 'latest',
+1063 silly mapToRegistry   type: 'tag' }
+1064 silly mapToRegistry uri https://registry.npmjs.org/xtend
+1065 verbose addNameRange registry:https://registry.npmjs.org/xtend not in flight; fetching
+1066 info postinstall postgres-date@1.0.4
+1067 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array/package.json
+1068 verbose addTmpTarball /var/folders/57/65jspjg57dqf0smqvcbph_3r0000gn/T/npm-941-dbb39113/registry.npmjs.org/split/-/split-0.3.3.tgz not in flight; adding
+1069 verbose addTmpTarball already have metadata; skipping unpack for split@0.3.3
+1070 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+1071 verbose unlock done using /Users/laura/.npm/_locks/postgres-bytea-30ce7047ec38158b.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-bytea
+1072 verbose unlock done using /Users/laura/.npm/_locks/postgres-date-1ce2d54b5699ee21.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-date
+1073 verbose request uri https://registry.npmjs.org/xtend
+1074 verbose request no auth needed
+1075 info attempt registry request try #1 at 12:46:52 PM
+1076 verbose etag W/"ecfa83864ecc8594ae119cc62109c6a9"
+1077 verbose lastModified Mon, 08 Jul 2019 13:35:50 GMT
+1078 http request GET https://registry.npmjs.org/xtend
+1079 silly install resolved []
+1080 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+1081 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+1082 info linkStuff postgres-array@1.0.3
+1083 silly linkStuff postgres-array@1.0.3 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules as its parent node_modules
+1084 silly cache afterAdd split@0.3.3
+1085 verbose afterAdd /Users/laura/.npm/split/0.3.3/package/package.json not in flight; writing
+1086 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+1087 verbose linkBins postgres-array@1.0.3
+1088 verbose linkMans postgres-array@1.0.3
+1089 verbose rebuildBundles postgres-array@1.0.3
+1090 info install postgres-array@1.0.3
+1091 info postinstall postgres-array@1.0.3
+1092 verbose afterAdd /Users/laura/.npm/split/0.3.3/package/package.json written
+1093 silly install resolved [ { name: 'split',
+1093 silly install resolved     version: '0.3.3',
+1093 silly install resolved     license: 'MIT',
+1093 silly install resolved     description: 'split a Text Stream into a Line Stream',
+1093 silly install resolved     homepage: 'http://github.com/dominictarr/split',
+1093 silly install resolved     repository: { type: 'git', url: 'git://github.com/dominictarr/split.git' },
+1093 silly install resolved     dependencies: { through: '2' },
+1093 silly install resolved     devDependencies:
+1093 silly install resolved      { asynct: '*',
+1093 silly install resolved        'event-stream': '~3.0.2',
+1093 silly install resolved        'it-is': '1',
+1093 silly install resolved        'stream-spec': '~0.2',
+1093 silly install resolved        ubelt: '~2.9',
+1093 silly install resolved        'string-to-stream': '~1.0.0' },
+1093 silly install resolved     scripts: { test: 'asynct test/' },
+1093 silly install resolved     author:
+1093 silly install resolved      { name: 'Dominic Tarr',
+1093 silly install resolved        email: 'dominic.tarr@gmail.com',
+1093 silly install resolved        url: 'http://bit.ly/dominictarr' },
+1093 silly install resolved     optionalDependencies: {},
+1093 silly install resolved     engines: { node: '*' },
+1093 silly install resolved     gitHead: '3fe392ef2aabce9db7abe8185ec48389ae224883',
+1093 silly install resolved     bugs: { url: 'https://github.com/dominictarr/split/issues' },
+1093 silly install resolved     _id: 'split@0.3.3',
+1093 silly install resolved     _shasum: 'cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f',
+1093 silly install resolved     _from: 'split@>=0.3.0 <0.4.0',
+1093 silly install resolved     _npmVersion: '2.2.0',
+1093 silly install resolved     _nodeVersion: '0.10.35',
+1093 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+1093 silly install resolved     maintainers: [ [Object] ],
+1093 silly install resolved     dist:
+1093 silly install resolved      { shasum: 'cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f',
+1093 silly install resolved        tarball: 'https://registry.npmjs.org/split/-/split-0.3.3.tgz' },
+1093 silly install resolved     directories: {},
+1093 silly install resolved     _resolved: 'https://registry.npmjs.org/split/-/split-0.3.3.tgz' } ]
+1094 info install split@0.3.3 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+1095 info installOne split@0.3.3
+1096 verbose installOne of split to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass not in flight; installing
+1097 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+1098 verbose unlock done using /Users/laura/.npm/_locks/postgres-array-197d7bd6a70c58f0.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-array
+1099 verbose lock using /Users/laura/.npm/_locks/split-e2ee0632b4fe5a90.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1100 silly install write writing split 0.3.3 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1101 verbose unbuild node_modules/pg/node_modules/pgpass/node_modules/split
+1102 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+1103 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1104 verbose tar unpack /Users/laura/.npm/split/0.3.3/package.tgz
+1105 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1106 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split is being purged
+1107 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1108 silly gunzTarPerm modes [ '755', '644' ]
+1109 silly gunzTarPerm extractEntry package.json
+1110 silly gunzTarPerm extractEntry .npmignore
+1111 silly gunzTarPerm extractEntry LICENCE
+1112 silly gunzTarPerm extractEntry index.js
+1113 silly gunzTarPerm extractEntry .travis.yml
+1114 silly gunzTarPerm extractEntry examples/pretty.js
+1115 silly gunzTarPerm extractEntry readme.markdown
+1116 silly gunzTarPerm extractEntry test/options.asynct.js
+1117 silly gunzTarPerm extractEntry test/partitioned_unicode.js
+1118 silly gunzTarPerm extractEntry test/split.asynct.js
+1119 silly gunzTarPerm extractEntry test/try_catch.asynct.js
+1120 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/package.json
+1121 info preinstall split@0.3.3
+1122 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/package.json
+1123 silly prepareForInstallMany adding through@2 from split dependencies
+1124 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/package.json
+1125 silly cache add args [ 'through@2', null ]
+1126 verbose cache add spec through@2
+1127 silly cache add parsed spec Result {
+1127 silly cache add   raw: 'through@2',
+1127 silly cache add   scope: null,
+1127 silly cache add   name: 'through',
+1127 silly cache add   rawSpec: '2',
+1127 silly cache add   spec: '>=2.0.0 <3.0.0',
+1127 silly cache add   type: 'range' }
+1128 silly addNamed through@>=2.0.0 <3.0.0
+1129 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for through
+1130 silly addNameRange { name: 'through', range: '>=2.0.0 <3.0.0', hasData: false }
+1131 silly mapToRegistry name through
+1132 silly mapToRegistry using default registry
+1133 silly mapToRegistry registry https://registry.npmjs.org/
+1134 silly mapToRegistry data Result {
+1134 silly mapToRegistry   raw: 'through',
+1134 silly mapToRegistry   scope: null,
+1134 silly mapToRegistry   name: 'through',
+1134 silly mapToRegistry   rawSpec: '',
+1134 silly mapToRegistry   spec: 'latest',
+1134 silly mapToRegistry   type: 'tag' }
+1135 silly mapToRegistry uri https://registry.npmjs.org/through
+1136 verbose addNameRange registry:https://registry.npmjs.org/through not in flight; fetching
+1137 verbose request uri https://registry.npmjs.org/through
+1138 verbose request no auth needed
+1139 info attempt registry request try #1 at 12:46:52 PM
+1140 verbose etag W/"cc5958d20a8a4a9cca39fa503a6dda17"
+1141 verbose lastModified Sat, 05 Jan 2019 15:16:42 GMT
+1142 http request GET https://registry.npmjs.org/through
+1143 http 304 https://registry.npmjs.org/xtend
+1144 verbose headers { date: 'Mon, 24 Feb 2020 18:46:52 GMT',
+1144 verbose headers   connection: 'keep-alive',
+1144 verbose headers   'set-cookie': [ '__cfduid=d1b381fa2acd31a97384e90983dcbaa961582570012; expires=Wed, 25-Mar-20 18:46:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+1144 verbose headers   'cf-ray': '56a39ad07bf9d12e-QRO',
+1144 verbose headers   age: '169',
+1144 verbose headers   'cache-control': 'public, max-age=300',
+1144 verbose headers   etag: '"ecfa83864ecc8594ae119cc62109c6a9"',
+1144 verbose headers   'last-modified': 'Mon, 08 Jul 2019 13:35:50 GMT',
+1144 verbose headers   vary: 'Accept-Encoding',
+1144 verbose headers   'cf-cache-status': 'HIT',
+1144 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1144 verbose headers   server: 'cloudflare' }
+1145 silly get cb [ 304,
+1145 silly get   { date: 'Mon, 24 Feb 2020 18:46:52 GMT',
+1145 silly get     connection: 'keep-alive',
+1145 silly get     'set-cookie': [ '__cfduid=d1b381fa2acd31a97384e90983dcbaa961582570012; expires=Wed, 25-Mar-20 18:46:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+1145 silly get     'cf-ray': '56a39ad07bf9d12e-QRO',
+1145 silly get     age: '169',
+1145 silly get     'cache-control': 'public, max-age=300',
+1145 silly get     etag: '"ecfa83864ecc8594ae119cc62109c6a9"',
+1145 silly get     'last-modified': 'Mon, 08 Jul 2019 13:35:50 GMT',
+1145 silly get     vary: 'Accept-Encoding',
+1145 silly get     'cf-cache-status': 'HIT',
+1145 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1145 silly get     server: 'cloudflare' } ]
+1146 verbose etag https://registry.npmjs.org/xtend from cache
+1147 verbose get saving xtend to /Users/laura/.npm/registry.npmjs.org/xtend/.cache.json
+1148 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+1149 silly addNameRange number 2 { name: 'xtend', range: '>=4.0.0 <5.0.0', hasData: true }
+1150 silly addNameRange versions [ 'xtend',
+1150 silly addNameRange   [ '1.0.0',
+1150 silly addNameRange     '1.0.1',
+1150 silly addNameRange     '1.0.2',
+1150 silly addNameRange     '1.0.3',
+1150 silly addNameRange     '2.0.1',
+1150 silly addNameRange     '2.0.2',
+1150 silly addNameRange     '2.0.3',
+1150 silly addNameRange     '2.0.4',
+1150 silly addNameRange     '2.0.5',
+1150 silly addNameRange     '2.0.6',
+1150 silly addNameRange     '2.1.1',
+1150 silly addNameRange     '2.1.2',
+1150 silly addNameRange     '2.2.0',
+1150 silly addNameRange     '3.0.0',
+1150 silly addNameRange     '4.0.0',
+1150 silly addNameRange     '4.0.1',
+1150 silly addNameRange     '4.0.2' ] ]
+1151 silly addNamed xtend@4.0.2
+1152 verbose addNamed "4.0.2" is a plain semver version for xtend
+1153 silly cache afterAdd xtend@4.0.2
+1154 verbose afterAdd /Users/laura/.npm/xtend/4.0.2/package/package.json not in flight; writing
+1155 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+1156 verbose afterAdd /Users/laura/.npm/xtend/4.0.2/package/package.json written
+1157 silly install resolved [ { name: 'xtend',
+1157 silly install resolved     version: '4.0.2',
+1157 silly install resolved     description: 'extend like a boss',
+1157 silly install resolved     keywords: [ 'extend', 'merge', 'options', 'opts', 'object', 'array' ],
+1157 silly install resolved     author: { name: 'Raynos', email: 'raynos2@gmail.com' },
+1157 silly install resolved     repository: { type: 'git', url: 'git://github.com/Raynos/xtend.git' },
+1157 silly install resolved     main: 'immutable',
+1157 silly install resolved     scripts: { test: 'node test' },
+1157 silly install resolved     dependencies: {},
+1157 silly install resolved     devDependencies: { tape: '~1.1.0' },
+1157 silly install resolved     homepage: 'https://github.com/Raynos/xtend',
+1157 silly install resolved     contributors: [ [Object], [Object] ],
+1157 silly install resolved     bugs:
+1157 silly install resolved      { url: 'https://github.com/Raynos/xtend/issues',
+1157 silly install resolved        email: 'raynos2@gmail.com' },
+1157 silly install resolved     license: 'MIT',
+1157 silly install resolved     testling: { files: 'test.js', browsers: [Object] },
+1157 silly install resolved     engines: { node: '>=0.4' },
+1157 silly install resolved     gitHead: '37816c0e2e25da2901d584442235946d5cd8c80d',
+1157 silly install resolved     _id: 'xtend@4.0.2',
+1157 silly install resolved     _nodeVersion: '10.15.3',
+1157 silly install resolved     _npmVersion: '6.9.2',
+1157 silly install resolved     dist:
+1157 silly install resolved      { integrity: 'sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==',
+1157 silly install resolved        shasum: 'bb72779f5fa465186b1f438f674fa347fdb5db54',
+1157 silly install resolved        tarball: 'https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz',
+1157 silly install resolved        fileCount: 7,
+1157 silly install resolved        unpackedSize: 6465,
+1157 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdI0ayCRA9TVsSAnZWagAAx5sP/0GFGMoeIKaOsNkW4VqT\npbchFQOM3JuA3y4h1pL0kHhRETKAN9aTU1eBv9VleXcCI5kbhtCQONZWCBGH\n4SV9SUFTE+Com3Yo1X1F00Fc8UEx1JtbSf82DLvjUy3dW4I7nGN6o001/lO1\nMjBB5fi4xrP/YPMuVbXhcB2WrgZ6X2VeSSAHnhkfxwfOAVq+shXzYvmRvFnN\nacFhuKRbQx24fQQPZrRY0FyCc797AJZhNJmrq3CRNbpkJ32TrKIjYibB6xm5\nE7HGTPKxF4j0WRlcRLOrhAIUXLV/kg7l5/YGCGjgzjhqGyoIId1Tn4tNinYb\naUcYalwfE8a4w6WdJp+rtNjftK2sjju5cqKbyg2UkelihMUlEhbeO+MfHgVa\nuXrrMnD55o/zMLnNfh31N2zEWAFbo5O7bdgD066zERKxMcvzOU6e/NgEYN3I\n0IJHNmYTb6sjFSC3+dsoLdyoHyda8wtnmuD2jiRLALMb22SdJG7n2DOJV6jc\n2nqTOn31vz9uB3WT5eLadpmNzYx7x/0cs5So2JGuBVMYYc+jmeqLo/6ZdG7w\nNi/hw8ZXh2RTsWPlXDcO99jQqzHg62J09h+Mci0GSVkl/fnHbx3Ho/jG7E5z\nwxbryfQHlY5haAOEATFROEQlXvAs3NIXCp1EG1fyqjyQU2MU1rZsPwycGF5Q\nff8r\r\n=1Too\r\n-----END PGP SIGNATURE-----\r\n' },
+1157 silly install resolved     maintainers: [ [Object] ],
+1157 silly install resolved     _npmUser: { name: 'raynos', email: 'raynos2@gmail.com' },
+1157 silly install resolved     directories: {},
+1157 silly install resolved     _npmOperationalInternal:
+1157 silly install resolved      { host: 's3://npm-registry-packages',
+1157 silly install resolved        tmp: 'tmp/xtend_4.0.2_1562592945262_0.1667332210531911' },
+1157 silly install resolved     _hasShrinkwrap: false,
+1157 silly install resolved     _shasum: 'bb72779f5fa465186b1f438f674fa347fdb5db54',
+1157 silly install resolved     _resolved: 'https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz',
+1157 silly install resolved     _from: 'xtend@>=4.0.0 <5.0.0',
+1157 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1158 info install xtend@4.0.2 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+1159 info installOne xtend@4.0.2
+1160 verbose installOne of xtend to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval not in flight; installing
+1161 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+1162 verbose lock using /Users/laura/.npm/_locks/xtend-019dec00cd994f40.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1163 silly install write writing xtend 4.0.2 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1164 verbose unbuild node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1165 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+1166 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1167 verbose tar unpack /Users/laura/.npm/xtend/4.0.2/package.tgz
+1168 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1169 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend is being purged
+1170 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1171 silly gunzTarPerm modes [ '755', '644' ]
+1172 silly gunzTarPerm extractEntry package.json
+1173 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1174 silly gunzTarPerm extractEntry .jshintrc
+1175 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+1176 silly gunzTarPerm extractEntry immutable.js
+1177 silly gunzTarPerm modified mode [ 'immutable.js', 436, 420 ]
+1178 silly gunzTarPerm extractEntry LICENSE
+1179 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+1180 silly gunzTarPerm extractEntry mutable.js
+1181 silly gunzTarPerm modified mode [ 'mutable.js', 436, 420 ]
+1182 silly gunzTarPerm extractEntry README.md
+1183 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+1184 silly gunzTarPerm extractEntry test.js
+1185 silly gunzTarPerm modified mode [ 'test.js', 436, 420 ]
+1186 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend/package.json
+1187 info preinstall xtend@4.0.2
+1188 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend/package.json
+1189 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend/package.json
+1190 silly install resolved []
+1191 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1192 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1193 info linkStuff xtend@4.0.2
+1194 silly linkStuff xtend@4.0.2 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules as its parent node_modules
+1195 verbose linkBins xtend@4.0.2
+1196 verbose linkMans xtend@4.0.2
+1197 verbose rebuildBundles xtend@4.0.2
+1198 info install xtend@4.0.2
+1199 info postinstall xtend@4.0.2
+1200 verbose unlock done using /Users/laura/.npm/_locks/xtend-019dec00cd994f40.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval/node_modules/xtend
+1201 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+1202 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+1203 info linkStuff postgres-interval@1.2.0
+1204 silly linkStuff postgres-interval@1.2.0 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules as its parent node_modules
+1205 verbose linkBins postgres-interval@1.2.0
+1206 verbose linkMans postgres-interval@1.2.0
+1207 verbose rebuildBundles postgres-interval@1.2.0
+1208 verbose rebuildBundles [ 'xtend' ]
+1209 info install postgres-interval@1.2.0
+1210 info postinstall postgres-interval@1.2.0
+1211 verbose unlock done using /Users/laura/.npm/_locks/postgres-interval-fb4e598c12495d0a.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types/node_modules/postgres-interval
+1212 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+1213 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+1214 info linkStuff pg-types@1.13.0
+1215 silly linkStuff pg-types@1.13.0 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+1216 verbose linkBins pg-types@1.13.0
+1217 verbose linkMans pg-types@1.13.0
+1218 verbose rebuildBundles pg-types@1.13.0
+1219 verbose rebuildBundles [ 'pg-int8',
+1219 verbose rebuildBundles   'postgres-array',
+1219 verbose rebuildBundles   'postgres-bytea',
+1219 verbose rebuildBundles   'postgres-date',
+1219 verbose rebuildBundles   'postgres-interval' ]
+1220 info install pg-types@1.13.0
+1221 info postinstall pg-types@1.13.0
+1222 verbose unlock done using /Users/laura/.npm/_locks/pg-types-52dcb3d7658e77bd.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pg-types
+1223 http 304 https://registry.npmjs.org/through
+1224 verbose headers { date: 'Mon, 24 Feb 2020 18:46:52 GMT',
+1224 verbose headers   connection: 'keep-alive',
+1224 verbose headers   'set-cookie': [ '__cfduid=dd2db667a2ba63785e12228fb6df347d21582570012; expires=Wed, 25-Mar-20 18:46:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+1224 verbose headers   'cf-ray': '56a39ad0fa93d0d8-QRO',
+1224 verbose headers   age: '169',
+1224 verbose headers   'cache-control': 'public, max-age=300',
+1224 verbose headers   etag: '"cc5958d20a8a4a9cca39fa503a6dda17"',
+1224 verbose headers   'last-modified': 'Sat, 05 Jan 2019 15:16:42 GMT',
+1224 verbose headers   vary: 'Accept-Encoding',
+1224 verbose headers   'cf-cache-status': 'HIT',
+1224 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1224 verbose headers   server: 'cloudflare' }
+1225 silly get cb [ 304,
+1225 silly get   { date: 'Mon, 24 Feb 2020 18:46:52 GMT',
+1225 silly get     connection: 'keep-alive',
+1225 silly get     'set-cookie': [ '__cfduid=dd2db667a2ba63785e12228fb6df347d21582570012; expires=Wed, 25-Mar-20 18:46:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+1225 silly get     'cf-ray': '56a39ad0fa93d0d8-QRO',
+1225 silly get     age: '169',
+1225 silly get     'cache-control': 'public, max-age=300',
+1225 silly get     etag: '"cc5958d20a8a4a9cca39fa503a6dda17"',
+1225 silly get     'last-modified': 'Sat, 05 Jan 2019 15:16:42 GMT',
+1225 silly get     vary: 'Accept-Encoding',
+1225 silly get     'cf-cache-status': 'HIT',
+1225 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1225 silly get     server: 'cloudflare' } ]
+1226 verbose etag https://registry.npmjs.org/through from cache
+1227 verbose get saving through to /Users/laura/.npm/registry.npmjs.org/through/.cache.json
+1228 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+1229 silly addNameRange number 2 { name: 'through', range: '>=2.0.0 <3.0.0', hasData: true }
+1230 silly addNameRange versions [ 'through',
+1230 silly addNameRange   [ '0.0.1',
+1230 silly addNameRange     '0.0.2',
+1230 silly addNameRange     '0.0.3',
+1230 silly addNameRange     '0.0.4',
+1230 silly addNameRange     '0.1.0',
+1230 silly addNameRange     '0.1.1',
+1230 silly addNameRange     '0.1.2',
+1230 silly addNameRange     '0.1.3',
+1230 silly addNameRange     '0.1.4',
+1230 silly addNameRange     '1.0.0',
+1230 silly addNameRange     '1.1.0',
+1230 silly addNameRange     '1.1.1',
+1230 silly addNameRange     '1.1.2',
+1230 silly addNameRange     '2.0.0',
+1230 silly addNameRange     '2.1.0',
+1230 silly addNameRange     '2.2.0',
+1230 silly addNameRange     '2.2.1',
+1230 silly addNameRange     '2.2.2',
+1230 silly addNameRange     '2.2.4',
+1230 silly addNameRange     '2.2.5',
+1230 silly addNameRange     '2.2.6',
+1230 silly addNameRange     '2.2.7',
+1230 silly addNameRange     '2.3.1',
+1230 silly addNameRange     '2.3.2',
+1230 silly addNameRange     '2.3.3',
+1230 silly addNameRange     '2.3.4',
+1230 silly addNameRange     '2.3.6',
+1230 silly addNameRange     '2.3.7',
+1230 silly addNameRange     '2.3.8' ] ]
+1231 silly addNamed through@2.3.8
+1232 verbose addNamed "2.3.8" is a plain semver version for through
+1233 silly cache afterAdd through@2.3.8
+1234 verbose afterAdd /Users/laura/.npm/through/2.3.8/package/package.json not in flight; writing
+1235 verbose correctMkdir /Users/laura/.npm correctMkdir not in flight; initializing
+1236 verbose afterAdd /Users/laura/.npm/through/2.3.8/package/package.json written
+1237 silly install resolved [ { name: 'through',
+1237 silly install resolved     version: '2.3.8',
+1237 silly install resolved     description: 'simplified stream construction',
+1237 silly install resolved     main: 'index.js',
+1237 silly install resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
+1237 silly install resolved     devDependencies: { 'stream-spec': '~0.3.5', tape: '~2.3.2', from: '~0.1.3' },
+1237 silly install resolved     keywords: [ 'stream', 'streams', 'user-streams', 'pipe' ],
+1237 silly install resolved     author:
+1237 silly install resolved      { name: 'Dominic Tarr',
+1237 silly install resolved        email: 'dominic.tarr@gmail.com',
+1237 silly install resolved        url: 'dominictarr.com' },
+1237 silly install resolved     license: 'MIT',
+1237 silly install resolved     repository:
+1237 silly install resolved      { type: 'git',
+1237 silly install resolved        url: 'git+https://github.com/dominictarr/through.git' },
+1237 silly install resolved     homepage: 'https://github.com/dominictarr/through',
+1237 silly install resolved     testling: { browsers: [Object], files: 'test/*.js' },
+1237 silly install resolved     gitHead: '2c5a6f9a0cc54da759b6e10964f2081c358e49dc',
+1237 silly install resolved     bugs: { url: 'https://github.com/dominictarr/through/issues' },
+1237 silly install resolved     _id: 'through@2.3.8',
+1237 silly install resolved     _shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+1237 silly install resolved     _from: 'through@>=2.0.0 <3.0.0',
+1237 silly install resolved     _npmVersion: '2.12.0',
+1237 silly install resolved     _nodeVersion: '2.3.1',
+1237 silly install resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+1237 silly install resolved     maintainers: [ [Object] ],
+1237 silly install resolved     dist:
+1237 silly install resolved      { shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+1237 silly install resolved        tarball: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz' },
+1237 silly install resolved     directories: {},
+1237 silly install resolved     _resolved: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz',
+1237 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1238 info install through@2.3.8 into /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1239 info installOne through@2.3.8
+1240 verbose installOne of through to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split not in flight; installing
+1241 verbose correctMkdir /Users/laura/.npm/_locks correctMkdir not in flight; initializing
+1242 verbose lock using /Users/laura/.npm/_locks/through-32f1ea8f34555b6a.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1243 silly install write writing through 2.3.8 to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1244 verbose unbuild node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1245 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through is being purged from base /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+1246 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1247 verbose tar unpack /Users/laura/.npm/through/2.3.8/package.tgz
+1248 verbose tar unpacking to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1249 silly gentlyRm /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through is being purged
+1250 verbose gentlyRm don't care about contents; nuking /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1251 silly gunzTarPerm modes [ '755', '644' ]
+1252 silly gunzTarPerm extractEntry package.json
+1253 silly gunzTarPerm extractEntry index.js
+1254 silly gunzTarPerm extractEntry .travis.yml
+1255 silly gunzTarPerm extractEntry LICENSE.APACHE2
+1256 silly gunzTarPerm extractEntry LICENSE.MIT
+1257 silly gunzTarPerm extractEntry readme.markdown
+1258 silly gunzTarPerm extractEntry test/async.js
+1259 silly gunzTarPerm extractEntry test/auto-destroy.js
+1260 silly gunzTarPerm extractEntry test/buffering.js
+1261 silly gunzTarPerm extractEntry test/end.js
+1262 silly gunzTarPerm extractEntry test/index.js
+1263 verbose write writing to /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through/package.json
+1264 info preinstall through@2.3.8
+1265 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through/package.json
+1266 verbose readDependencies loading dependencies from /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through/package.json
+1267 silly install resolved []
+1268 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1269 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1270 info linkStuff through@2.3.8
+1271 silly linkStuff through@2.3.8 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules as its parent node_modules
+1272 verbose linkBins through@2.3.8
+1273 verbose linkMans through@2.3.8
+1274 verbose rebuildBundles through@2.3.8
+1275 info install through@2.3.8
+1276 info postinstall through@2.3.8
+1277 verbose unlock done using /Users/laura/.npm/_locks/through-32f1ea8f34555b6a.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split/node_modules/through
+1278 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1279 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1280 info linkStuff split@0.3.3
+1281 silly linkStuff split@0.3.3 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules as its parent node_modules
+1282 verbose linkBins split@0.3.3
+1283 verbose linkMans split@0.3.3
+1284 verbose rebuildBundles split@0.3.3
+1285 verbose rebuildBundles [ 'through' ]
+1286 info install split@0.3.3
+1287 info postinstall split@0.3.3
+1288 verbose unlock done using /Users/laura/.npm/_locks/split-e2ee0632b4fe5a90.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass/node_modules/split
+1289 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+1290 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+1291 info linkStuff pgpass@0.0.3
+1292 silly linkStuff pgpass@0.0.3 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules as its parent node_modules
+1293 verbose linkBins pgpass@0.0.3
+1294 verbose linkMans pgpass@0.0.3
+1295 verbose rebuildBundles pgpass@0.0.3
+1296 verbose rebuildBundles [ 'split' ]
+1297 info install pgpass@0.0.3
+1298 info postinstall pgpass@0.0.3
+1299 verbose unlock done using /Users/laura/.npm/_locks/pgpass-eb76351ae3f88862.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg/node_modules/pgpass
+1300 verbose about to build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+1301 info build /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+1302 info linkStuff pg@4.4.5
+1303 silly linkStuff pg@4.4.5 has /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules as its parent node_modules
+1304 verbose linkBins pg@4.4.5
+1305 verbose linkMans pg@4.4.5
+1306 verbose rebuildBundles pg@4.4.5
+1307 verbose rebuildBundles [ '.bin',
+1307 verbose rebuildBundles   'buffer-writer',
+1307 verbose rebuildBundles   'generic-pool',
+1307 verbose rebuildBundles   'packet-reader',
+1307 verbose rebuildBundles   'pg-connection-string',
+1307 verbose rebuildBundles   'pg-types',
+1307 verbose rebuildBundles   'pgpass',
+1307 verbose rebuildBundles   'semver' ]
+1308 info install pg@4.4.5
+1309 info postinstall pg@4.4.5
+1310 verbose unlock done using /Users/laura/.npm/_locks/pg-2e0a1f338035cf0f.lock for /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/node_modules/pg
+1311 verbose validateInstall loading /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4/package.json for validation
+1312 verbose stack Error: The package pg@4.4.5 does not satisfy its siblings' peerDependencies requirements!
+1312 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+1312 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+1312 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1312 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1312 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1312 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1312 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1312 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1312 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1312 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1313 verbose cwd /Users/laura/Documents/Prototipos/CompitaLectura/CompitaDeLecturaV4
+1314 error Darwin 15.6.0
+1315 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "pg@4.4.5"
+1316 error node v4.4.5
+1317 error npm  v2.15.5
+1318 error code EPEERINVALID
+1319 error peerinvalid The package pg@4.4.5 does not satisfy its siblings' peerDependencies requirements!
+1319 error peerinvalid Peer pg-pool@2.0.10 wants pg@>5.0
+1320 verbose exit [ 1, true ]
