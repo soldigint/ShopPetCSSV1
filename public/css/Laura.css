@@ -1,0 +1,111 @@
+html {	 
+	background-color: ghostwhite;
+}
+
+body{
+    background-color: ghostwhite;
+}
+header{
+   
+}
+.titulares {
+    font-size:30px;
+    display: table-header-group;
+    top:0;
+    left:0;
+    width: 100%;
+    position:fixed;
+        background: linear-gradient(to left top, green, yellow 50%);
+   
+   
+   
+  
+}
+.titulares-link { 
+    background-color: #FFFFFF;
+    color: black;
+    text-decoration:none;
+    background: yellow
+}
+
+.titulo {
+    color: #FFFF22;
+    font-size:50px;
+   font-family: fantasy;
+  margin-top: 20px;
+    padding-top: 20px;
+     text-align: center;
+     background: white;
+}
+
+.cuerpito{
+    margin-top: 20px;
+    padding-top: 20px;
+    overflow: scroll;
+    position: relative;
+    text-align: justify;
+    color: #222222;
+    font-family: fantasy;
+    font-size:30px;
+}
+.letrotas{
+    overflow: scroll;
+    position: relative;
+    text-align: justify;
+    color: #888888;
+    font-family: fantasy;
+    font-size:100px;
+}
+.textos{
+    overflow: scroll;
+    position: relative;
+    text-align: justify;
+    color: #555555;
+    font-family: fantasy;
+    font-size:50px;
+}
+
+.piecito{
+    animation: rainbow-background 5s infinite;
+     text-align: center;
+     background-color: #FFFFFF;
+    font-size:20px;    
+   bottom:0;
+    left:0;
+    width: 100%;
+    position:fixed;
+}
+.Imagenes{
+    height:500px;
+    background:#fff;
+    
+}
+.Imagenes:hover{
+    height:520px;
+    background: #aaaaaa;
+    transition: all 400ms ease;
+}
+
+@keyframes rainbow-background {
+    
+    25.00%     { background-color: yellow; }
+    100.00%     { background-color: greenyellow; }   
+}
+@keyframes girando {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Huesi {
+    animation: girando infinite 5s linear;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+
+}
